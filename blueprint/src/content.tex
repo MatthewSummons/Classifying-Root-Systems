@@ -5,3 +5,128 @@
 % If you want to split the blueprint content into several files then
 % the current file can be a simple sequence of \input. Otherwise It
 % can start with a \section or \chapter for instance.
+
+
+\chapter{Something Something}
+\section{Root Systems}
+
+\begin{definition}
+    Let $E$ be a finite-dimensional Euclidean space with an inner product $\langle \cdot, \cdot \rangle$.
+    
+    A \textbf{root system} in $E$ is a tuple (E, $\Phi$), where $\Phi$ is a finite set of non-zero vectors (called roots) satisfying the following properties:
+    \begin{enumerate}
+        \item $\Phi$ spans $E$.
+        \item For every root $\alpha \in \Phi$, the set $\Phi$ is closed under reflection through the hyperplane orthogonal to $\alpha$.
+        That is, for any two roots $\alpha, \beta \in \Phi$, the set $\Phi$ contains the element
+        \begin{equation*}
+            \sigma_\alpha(\beta) = \beta - \frac{2 \langle \alpha, \beta \rangle}{\langle \alpha, \alpha \rangle} \alpha.
+        \end{equation*}
+    \end{enumerate}
+\end{definition}
+
+\textcolor{red}{Add a figure here to show the reflection through the hyperplane}
+
+For convenience and in contexts where the Inner Product Space is clear, the root system is often referred to simply as $\Phi$.
+
+\begin{example}
+    The set $R_0 = \{\pm \alpha\}$, where $\alpha$ is any fixed real number, are roots in $\mathbb{R}$.
+\end{example}
+
+\begin{definition}
+    If a root system the condition that the only multiples of a root, $\alpha$, that are in the root system are $\pm \alpha$, then the root system is said to be \textbf{reduced}.
+\end{definition}
+
+\begin{definition}
+    If a root system satisfies the intgerality condition below, then it is said to be \textbf{crystallographic}.
+    \begin{equation*}
+        [ \beta, \alpha ] :=  \frac{2 \langle \alpha, \beta \rangle}{\langle \alpha, \alpha \rangle} \in \mathbb{Z} \quad \text{for all } \alpha, \beta \in \Phi.
+    \end{equation*}
+\end{definition}
+
+
+For the following examples, denote $e_i$ as the $i$-th standard basis vector in $\mathbb{R}^n$. Then, in combinations such as $\pm e_i \pm e_j$, the signs may be chosen independently.
+
+\begin{example}
+    The set $R_1$, shown below, is a root system in $\mathbb{R}^2$ that is neither reduced nor crystallographic.
+    
+    \begin{equation*}
+        R_1 = \{
+            \pm e_1, (\pm \frac{\sqrt{3}}{2}, \pm \frac{1}{2}), (\pm \sqrt{3}, \pm 1) 
+        \} 
+    \end{equation*}
+    $R_1$ spans $\mathbb{R}^2$ and is closed under reflection through the hyperplane orthogonal to any root, hence it is a root system.
+    
+    However, is is not a \textbf{reduced} root system since a scalar multiple of an element in $R_1$, namely $2 \cdot (\pm \frac{1}{2}, \pm \frac{\sqrt{3}}{2})$, is contained in $R_1$ itself. 
+    It is also not a \textbf{crystallographic} root system because $ [ e_1, (\pm \frac{\sqrt{3}}{2}, \pm \frac{1}{2}) ] = \frac{\sqrt{3}}{2} \notin \mathbb{Z}$.
+\end{example}
+
+\begin{example}
+    If we remove the redundant multiple in $R_1$ above, we obtain a reduced, non-crystallographic root system $R_2$.
+    
+    \begin{equation*}
+        R_2 = \{
+            \pm e_1, (\pm \frac{\sqrt{3}}{2}, \pm \frac{1}{2})
+        \} 
+    \end{equation*}
+\end{example}
+
+One can also construct examples of non-reduced crystallographic root systems. Consider the following example,
+
+\begin{example}
+    The set $R_3$ is a root system in $\mathbb{R}^2$ that is crystallographic but not reduced.
+    
+    \begin{equation*}
+        R_3 = \{
+            \pm e_1, \pm e_2, \pm 2 e_1
+        \} 
+    \end{equation*}
+    $R_3$ spans $\mathbb{R}^2$ and is closed under reflection through the hyperplane orthogonal to any root, hence it is a root system.
+    It is a \textbf{crystallographic} root system because $[ k e_1, e_2 ] = 0$ and $[ k e_1, k' e_1 ] = kk' \in \mathbb{Z}$, where $k,k \in \{\pm 1, \pm 2\}$.
+    However, is is not a \textbf{reduced} root system since $2 e_1 \in R_3$.
+\end{example}
+
+
+\begin{example}
+    The set $R_4$ is a root system in $\mathbb{R}^2$ that is reduced and crystallographic.
+    
+    \begin{equation*}
+        R_4 = \{
+            \pm e_1, \pm e_2
+            \} 
+        \end{equation*}
+    \end{example}
+
+Therefore, we see that a root system may be reduced, crystallographic, both, or neither.
+
+This paper concerns itself primarily with reduced, crystallographic root systems, simply referred to as root systems henceforth, unless otherwise specified.
+
+\begin{definition}
+    The rank of a root system $\Phi$ is the dimension of the Euclidean space $E$.
+\end{definition}
+
+\textcolor{red}{Ambigious definition for irreducible root systems.}
+
+\begin{definition}
+    Two root systems can be combined to form a new root system by regarding the Euclidean spaces they span as mutually orthogonal subspaces of a common Euclidean space.
+    A root system which does not arise from such a combination is said to be irreducible. Otherwise, for systems that do arise from such a combination, such as $R_4$ from $R_0$ they are said to be reducible.
+\end{definition}
+
+\begin{example}
+    The set $BC_n$ is the only irreducible non-reduced root system (upto isomorhism) in $\mathbb{R}^n$ [Source: textcolor{red}{Revealed in a dream}].
+    \begin{equation*}
+        BC_n = \{
+            \pm e_i, \pm e_i \pm e_j, \pm 2 e_i
+        \}
+    \end{equation*}
+\end{example}
+
+\textcolor{red}{More examples ...}
+
+Since we aim to classify all root systems, upto isomorhism, it is important to understand when two root systems are isomorphic.
+
+\begin{definition}
+    Two root systems $(E, \Phi)$ and $(F,\Psi)$ are said to be isomorphic if there exists a linear isomorphism $\varphi: E \to F$ such that $\varphi(\Phi) = \Psi$
+    and preserves the number $\langle x, y \rangle$ for each pair of roots.
+\end{definition}
+
+\textcolor{red}{Examples here ...}
