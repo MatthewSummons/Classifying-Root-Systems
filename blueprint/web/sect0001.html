@@ -46,60 +46,85 @@
 
 
 <div class="main-text">
-<h1 id="a0000000002"> Something Something</h1>
+<h1 id="a0000000002">Something Something</h1>
 <h1 id="a0000000003"> Root Systems</h1>
-<p><div class="definition_thmwrapper " id="a0000000004">
-  <div class="definition_thmheading">
-    <span class="definition_thmcaption">
-    Definition
-    </span>
-    <span class="definition_thmlabel">1</span>
-  </div>
-  <div class="definition_thmcontent">
-  <p>Let \(E\) be a finite-dimensional Euclidean space with an inner product \(\langle \cdot , \cdot \rangle \). </p>
-<p>A <b class="bfseries">root system</b> in \(E\) is a finite set \(\Phi \) of non-zero vectors (called roots) satisfying the following properties: </p>
+<p><p><b class="bfseries">Definition (Root System).</b>  Let \(E\) be a finite-dimensional Euclidean space with an inner product \(\langle \cdot , \cdot \rangle \). </p>
+<p>A <b class="bfseries">root system</b> in \(E\) is a tuple (E, \(\Phi \)), where \(\Phi \) is a finite set of non-zero vectors (called roots) satisfying the following properties: </p>
 <ol class="enumerate">
   <li><p>\(\Phi \) spans \(E\). </p>
 </li>
-  <li><p>For every root \(\alpha \in \Phi \), the set \(\Phi \) is closed under reflection through the hyperplane orthogonal to \(\alpha \). That is, for any two roots \(\alpha , \beta \in \Phi \), the set \(\Phi \) contains the element <div class="displaymath" id="a0000000005">
+  <li><p>For every root \(\alpha \in \Phi \), the set \(\Phi \) is closed under reflection through the hyperplane orthogonal to \(\alpha \). That is, for any two roots \(\alpha , \beta \in \Phi \), the set \(\Phi \) contains the element <div class="displaymath" id="a0000000004">
   
-</div> σ_α(β) = β-  α. <div class="displaymath" id="a0000000006">
+</div> σ_α(β) = β-  α. <div class="displaymath" id="a0000000005">
   
 </div> </p>
 </li>
 </ol>
+<p>The rank of the root system is the dimension of the Euclidean space \(E\). </p>
+
+ </p>
+<p><span style="None"></span>redAdd a figure here to show the reflection through the hyperplane </p>
+<p>For convenience and in contexts where the inner product space is clear, the root system is often referred to simply as \(\Phi \). </p>
+<p><div class="example_thmwrapper " id="a0000000006">
+  <div class="example_thmheading">
+    <span class="example_thmcaption">
+    Example
+    </span>
+    <span class="example_thmlabel">1</span>
+  </div>
+  <div class="example_thmcontent">
+  <p>\(R_0 = \{ \pm \alpha \} \), where \(\alpha \) is any fixed non-zero real number, constitutes a root system in \(\mathbb {R}\). </p>
 
   </div>
 </div> </p>
-<p><div class="definition_thmwrapper " id="a0000000007">
-  <div class="definition_thmheading">
-    <span class="definition_thmcaption">
-    Definition
-    </span>
-    <span class="definition_thmlabel">2</span>
-  </div>
-  <div class="definition_thmcontent">
-  <p>If a root system the condition that the only multiples of a root that are in the root system are \(\pm \alpha \), then the root system is said to be <b class="bfseries">reduced</b>. </p>
+<p><p><b class="bfseries">Definition (Reduced Root System).</b>  If a root system satisfies the condition that the only multiples of a root, \(\alpha \), that are in the root system are \(\pm \alpha \), then the root system is said to be <b class="bfseries">reduced</b>. </p>
 
-  </div>
-</div> </p>
-<p><div class="definition_thmwrapper " id="a0000000008">
-  <div class="definition_thmheading">
-    <span class="definition_thmcaption">
-    Definition
-    </span>
-    <span class="definition_thmlabel">3</span>
-  </div>
-  <div class="definition_thmcontent">
-  <p>If a (reduced needed or not??) root system satisfies the intgerality condition below, then it is said to be <b class="bfseries">crystallographic</b>. <div class="displaymath" id="a0000000009">
+ </p>
+<p><p><b class="bfseries">Definition (Crystallographic Root System).</b>  If a root system satisfies the integrality condition below, then it is said to be <b class="bfseries">crystallographic</b>. <div class="displaymath" id="a0000000007">
   
-</div> β, α:=  Z &#8195;for all  α, βΦ. <div class="displaymath" id="a0000000010">
+</div> β, α:=  Z &#8195;for all  α, βΦ. <div class="displaymath" id="a0000000008">
   
 </div> </p>
 
+ </p>
+<p>Throughout this text, denote \(e_i\) as the \(i\)-th standard basis vector in \(\mathbb {R}^n\). Then, in combinations such as \(\pm e_i \pm e_j\), the signs may be chosen independently. </p>
+<p><div class="example_thmwrapper " id="a0000000009">
+  <div class="example_thmheading">
+    <span class="example_thmcaption">
+    Example
+    </span>
+    <span class="example_thmlabel">2</span>
+  </div>
+  <div class="example_thmcontent">
+  <p>The set \(R_1\), shown below, is a root system in \(\mathbb {R}^2\) that is neither reduced nor crystallographic. </p>
+<p><div class="displaymath" id="a0000000010">
+  
+</div> R_1 = { ±e_1, (±, ±), (±3, ±1) } <div class="displaymath" id="a0000000011">
+  
+</div> \(R_1\) spans \(\mathbb {R}^2\) and is closed under reflection through the hyperplane orthogonal to any root, hence it is a root system. </p>
+<p>However, is is not a <b class="bfseries">reduced</b> root system since a scalar multiple of an element in \(R_1\), namely \(2 \cdot (\pm \frac{1}{2}, \pm \frac{\sqrt{3}}{2})\), is contained in \(R_1\) itself. It is also not a <b class="bfseries">crystallographic</b> root system because \( \langle \langle e_1, (\pm \frac{\sqrt{3}}{2}, \pm \frac{1}{2}) \rangle \rangle = \frac{\sqrt{3}}{2} \notin \mathbb {Z}\). </p>
+
   </div>
 </div> </p>
-<p><div class="example_thmwrapper " id="a0000000011">
+<p><div class="example_thmwrapper " id="a0000000012">
+  <div class="example_thmheading">
+    <span class="example_thmcaption">
+    Example
+    </span>
+    <span class="example_thmlabel">3</span>
+  </div>
+  <div class="example_thmcontent">
+  <p>If we remove the redundant multiple in \(R_1\) above, we obtain a reduced, non-crystallographic root system \(R_2\). </p>
+<p><div class="displaymath" id="a0000000013">
+  
+</div> R_2 = { ±e_1, (±, ±) } <div class="displaymath" id="a0000000014">
+  
+</div> </p>
+
+  </div>
+</div> </p>
+<p>One can also construct examples of non-reduced crystallographic root systems. Consider the following example, </p>
+<p><div class="example_thmwrapper " id="a0000000015">
   <div class="example_thmheading">
     <span class="example_thmcaption">
     Example
@@ -107,11 +132,16 @@
     <span class="example_thmlabel">4</span>
   </div>
   <div class="example_thmcontent">
-  <p>The set of all vectors in \(E\) is not a root system, since it is not finite. </p>
+  <p>The set \(R_3\) is a root system in \(\mathbb {R}^2\) that is crystallographic but not reduced. </p>
+<p><div class="displaymath" id="a0000000016">
+  
+</div> R_3 = { ±e_1, ±e_2, ±2 e_1 } <div class="displaymath" id="a0000000017">
+  
+</div> \(R_3\) spans \(\mathbb {R}^2\) and is closed under reflection through the hyperplane orthogonal to any root, hence it is a root system. It is a <b class="bfseries">crystallographic</b> root system because \(\langle \langle k e_1, e_2 \rangle \rangle = 0\) and \(\langle \langle k e_1, k' e_1 \rangle \rangle = kk' \in \mathbb {Z}\), where \(k,k \in \{ \pm 1, \pm 2\} \). However, is is not a <b class="bfseries">reduced</b> root system since \(2 e_1 \in R_3\). </p>
 
   </div>
-</div> For the following examples, denote \(e_i\) as the \(i\)-th standard basis vector in \(\mathbb {R}^n\). Then, in combinations such as \(\pm e_i \pm e_j\), the signs may be chosen independently. </p>
-<p><div class="example_thmwrapper " id="a0000000012">
+</div> </p>
+<p><div class="example_thmwrapper " id="a0000000018">
   <div class="example_thmheading">
     <span class="example_thmcaption">
     Example
@@ -119,11 +149,21 @@
     <span class="example_thmlabel">5</span>
   </div>
   <div class="example_thmcontent">
-  <p>The set \(R_0 = \{ \pm \alpha \} \) is a root system in \(\mathbb {R}\). </p>
+  <p>The set \(R_4\) is a root system in \(\mathbb {R}^2\) that is reduced and crystallographic. </p>
+<p><div class="displaymath" id="a0000000019">
+  
+</div> R_4 = { ±e_1, ±e_2 } <div class="displaymath" id="a0000000020">
+  
+</div> </p>
 
   </div>
 </div> </p>
-<p><div class="example_thmwrapper " id="a0000000013">
+<p>Therefore, we see that a root system may be reduced, crystallographic, both, or neither. This report concerns itself primarily with reduced, crystallographic root systems, simply referred to as root systems henceforth, unless otherwise specified. <br /></p>
+<p>Since we aim to classify all root systems, upto isomorhism, it is important to understand when two root systems are isomorphic. <br /></p>
+<p><p><b class="bfseries">Definition (Root System Isomorphism).</b>  Two root systems \((E, \Phi )\) and \((F,\Psi )\) are said to be isomorphic if there exists a linear isomorphism \(\varphi : E \to F\) such that \(\varphi (\Phi ) = \Psi \) and preserves the number \(\langle \langle x, y \rangle \rangle \) for each pair of roots. </p>
+
+ </p>
+<p><div class="example_thmwrapper " id="a0000000021">
   <div class="example_thmheading">
     <span class="example_thmcaption">
     Example
@@ -131,20 +171,11 @@
     <span class="example_thmlabel">6</span>
   </div>
   <div class="example_thmcontent">
-  <p>The set \(R_1\), shown below, is a root system in \(\mathbb {R}^2\) that is neither reduced nor crystallographic. </p>
-<div class="equation" id="a0000000014">
-<p>
-  <div class="equation_content">
-    \begin{equation}  R_1 = \{  \pm e_1, (\pm \frac{\sqrt{3}}{2}, \pm \frac{1}{2}), (\pm \sqrt{3}, \pm 1) \}  \end{equation}
-  </div>
-  <span class="equation_label"></span>
-</p>
-</div>
-<p> \(R_1\) spans \(\mathbb {R}^2\) and is closed under reflection through the hyperplane orthogonal to any root, hence it is a root system. However, is is not a <b class="bfseries">reduced</b> root system since \(2 \cdot (\pm \frac{1}{2}, \pm \frac{\sqrt{3}}{2}) \in R_1\). It is also not a <b class="bfseries">crystallographic</b> root system because \(\langle e_1, (\pm \frac{\sqrt{3}}{2}, \pm \frac{1}{2}) \rangle = \frac{\sqrt{3}}{2} \notin \mathbb {Z}\). </p>
+  <p>The root systems \(R = \{  \pm e_1, \pm e_2 \}  \) and \(R' = \{  \pm e_1 \pm e_2 \} \) are isomorphic. </p>
 
   </div>
 </div> </p>
-<p><div class="example_thmwrapper " id="a0000000015">
+<p><div class="example_thmwrapper " id="a0000000022">
   <div class="example_thmheading">
     <span class="example_thmcaption">
     Example
@@ -152,108 +183,10 @@
     <span class="example_thmlabel">7</span>
   </div>
   <div class="example_thmcontent">
-  <p>If we remove the redundant multiple in \(R_1\) above, we obtain a reduced, non-crystallographic root system \(R_2\). </p>
-<p><div class="displaymath" id="a0000000016">
-  
-</div> R_2 = { ±e_1, (±, ±) } <div class="displaymath" id="a0000000017">
-  
-</div> </p>
+  <p>The root systems \(S = \{  \pm e_1, \pm e_2, \pm e_1 \pm e_2 \}  \) and \(S' = \{  \pm e_1, (\pm \frac{\sqrt{3}}{2}, \pm \frac{1}{2}) \} \) are not isomorphic. </p>
 
   </div>
-</div> </p>
-<p>One can also construct examples of non-reduced crystallographic root systems. Consider the following example. </p>
-<p><div class="example_thmwrapper " id="a0000000018">
-  <div class="example_thmheading">
-    <span class="example_thmcaption">
-    Example
-    </span>
-    <span class="example_thmlabel">8</span>
-  </div>
-  <div class="example_thmcontent">
-  <p>The set \(R_3\) is a root system in \(\mathbb {R}^2\) that is crystallographic but not reduced. </p>
-<p><div class="displaymath" id="a0000000019">
-  
-</div> R_3 = { ±e_1, ±e_2, ±2 e_1 } <div class="displaymath" id="a0000000020">
-  
-</div> \(R_3\) spans \(\mathbb {R}^2\) and is closed under reflection through the hyperplane orthogonal to any root, hence it is a root system. It is a <b class="bfseries">crystallographic</b> root system because \(\langle k e_1, e_2 \rangle = 0\) and \(\langle k e_1, k' e_1 \rangle = kk' \in \mathbb {Z}\), where \(k,k \in \{ \pm 1, \pm 2\} \). However, is is not a <b class="bfseries">reduced</b> root system since \(2 e_1 \in R_3\). </p>
-
-  </div>
-</div> </p>
-<p><div class="example_thmwrapper " id="a0000000021">
-  <div class="example_thmheading">
-    <span class="example_thmcaption">
-    Example
-    </span>
-    <span class="example_thmlabel">9</span>
-  </div>
-  <div class="example_thmcontent">
-  <p>The set \(R_4\) is a root system in \(\mathbb {R}^2\) that is reduced and crystallographic. </p>
-<p><div class="displaymath" id="a0000000022">
-  
-</div> R_4 = { ±e_1, ±e_2 } <div class="displaymath" id="a0000000023">
-  
-</div> </p>
-
-  </div>
-</div> </p>
-<p>Therefore, we see that a root system may be reduced, crystallographic, both, or neither. </p>
-<p>This paper concerns itself primarily with reduced, crystallographic root systems, simply called root systems from now on. </p>
-<p><div class="definition_thmwrapper " id="a0000000024">
-  <div class="definition_thmheading">
-    <span class="definition_thmcaption">
-    Definition
-    </span>
-    <span class="definition_thmlabel">10</span>
-  </div>
-  <div class="definition_thmcontent">
-  <p>The rank of a root system \(\Phi \) is the dimension of the Euclidean space \(E\). </p>
-
-  </div>
-</div> </p>
-<p><span style="None"></span>redAmbigious definition for irreducible root systems. </p>
-<p><div class="definition_thmwrapper " id="a0000000025">
-  <div class="definition_thmheading">
-    <span class="definition_thmcaption">
-    Definition
-    </span>
-    <span class="definition_thmlabel">11</span>
-  </div>
-  <div class="definition_thmcontent">
-  <p>Two root systems can be combined to form a new root system by regarding the Euclidean spaces they span as mutually orthogonal subspaces of a common Euclidean space. A root system which does not arise from such a combination is said to be irreducible. Otherwise, for systems that do arise from such a combination, such as \(R_4\) from \(R_0\) they are said to be reducible. </p>
-
-  </div>
-</div> </p>
-<p><div class="example_thmwrapper " id="a0000000026">
-  <div class="example_thmheading">
-    <span class="example_thmcaption">
-    Example
-    </span>
-    <span class="example_thmlabel">12</span>
-  </div>
-  <div class="example_thmcontent">
-  <p>The set \(BC_n\) is the only irreducible non-reduced root system (upto isomorhism) in \(\mathbb {R}^n\) [Source: textcolorredRevealed in a dream]. <div class="displaymath" id="a0000000027">
-  
-</div> BC_n = { ±e_i, ±e_i ±e_j, ±2 e_i } <div class="displaymath" id="a0000000028">
-  
-</div> </p>
-
-  </div>
-</div> </p>
-<p><span style="None"></span>redMore examples ... </p>
-<p>Since we aim to classify all root systems, upto isomorhism, it is important to understand when two root systems are isomorphic. </p>
-<p><div class="definition_thmwrapper " id="a0000000029">
-  <div class="definition_thmheading">
-    <span class="definition_thmcaption">
-    Definition
-    </span>
-    <span class="definition_thmlabel">13</span>
-  </div>
-  <div class="definition_thmcontent">
-  <p>Two root systems \((E, \Phi )\) and \((F,\Psi )\) are said to be isomorphic if there exists a linear isomorphism \(\varphi : E \to F\) such that \(\varphi (\Phi ) = \Psi \) and preserves the number \(\langle x, y \rangle \) for each pair of roots. </p>
-
-  </div>
-</div> </p>
-<p><span style="None"></span>redExamples here ... </p>
+</div>  </p>
 
 </div> <!--main-text -->
 </div> <!-- content-wrapper -->

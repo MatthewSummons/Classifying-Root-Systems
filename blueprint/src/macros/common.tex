@@ -14,8 +14,17 @@
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{corollary}[theorem]{Corollary}
 
-\theoremstyle{definition}
 \newtheorem{definition}[theorem]{Definition}
+\newenvironment{nameddefinition}[1]{%
+    \par\noindent\textbf{Definition (#1).}\ \ignorespaces%
+}{%
+    \par\medskip%
+}
 
-% \theoremstyle{example}
+\newenvironment{namedtheorem}[1]{%
+    \par\noindent\textbf{Theorem (#1).}\ \ignorespaces%
+}{%
+    \par\medskip%
+}
+
 \newtheorem{example}[theorem]{Example}

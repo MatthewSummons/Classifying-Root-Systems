@@ -12,6 +12,7 @@ lean_exe "classifying-root-systems" where
   root := `Main
 
 require checkdecls from git "https://github.com/PatrickMassot/checkdecls.git"
+require "leanprover-community" / "mathlib"
 
 meta if get_config? env = some "dev" then
 require «doc-gen4» from git
