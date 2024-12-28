@@ -12,7 +12,7 @@
 <meta name="generator" content="plasTeX" />
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Something Something</title>
+<title>Classifying Root Systems</title>
 <link rel="prev" href="index.html" title="Classification of Root Systems" />
 <link rel="up" href="index.html" title="Classification of Root Systems" />
 <link rel="stylesheet" href="styles/theme-white.css" />
@@ -29,11 +29,14 @@
 <nav class="toc">
 <ul class="sub-toc-0">
 <li class=" active current">
-  <a href="sect0001.html"><span class="toc_ref"></span> <span class="toc_entry">Something Something</span></a>
+  <a href="sect0001.html"><span class="toc_ref"></span> <span class="toc_entry">Classifying Root Systems</span></a>
   <span class="expand-toc">▼</span>
   <ul class="sub-toc-1 active">
      <li class="">
   <a href="sect0001.html#a0000000003"><span class="toc_ref"></span> <span class="toc_entry">Root Systems</span></a>
+ </li>
+<li class="">
+  <a href="sect0001.html#a0000000036"><span class="toc_ref"></span> <span class="toc_entry">Classifying Root Systems of Small Rank</span></a>
  </li>
 
   </ul>
@@ -46,26 +49,29 @@
 
 
 <div class="main-text">
-<h1 id="a0000000002">Something Something</h1>
+<h1 id="a0000000002"> Classifying Root Systems</h1>
 <h1 id="a0000000003"> Root Systems</h1>
-<p><p><b class="bfseries">Definition (Root System).</b>  Let \(E\) be a finite-dimensional Euclidean space with an inner product \(\langle \cdot , \cdot \rangle \). </p>
-<p>A <b class="bfseries">root system</b> in \(E\) is a tuple (E, \(\Phi \)), where \(\Phi \) is a finite set of non-zero vectors (called roots) satisfying the following properties: </p>
+<p><p><b class="bfseries">Definition (Root System).</b>  Let \(E\) be a finite-dimensional Euclidean space with an inner product \(\langle \cdot , \cdot \rangle \). <br /></p>
+<p>A <b class="bfseries">root system</b> in \(E\) is a tuple (E, \(\Phi \)), where \(\Phi \) is a finite, non-empty set of non-zero vectors (called <b class="bfseries">roots</b>) satisfying the following properties: </p>
 <ol class="enumerate">
   <li><p>\(\Phi \) spans \(E\). </p>
 </li>
   <li><p>For every root \(\alpha \in \Phi \), the set \(\Phi \) is closed under reflection through the hyperplane orthogonal to \(\alpha \). That is, for any two roots \(\alpha , \beta \in \Phi \), the set \(\Phi \) contains the element <div class="displaymath" id="a0000000004">
   
-</div> σ_α(β) = β-  α. <div class="displaymath" id="a0000000005">
+</div> σ_α(β) = β- 2  proj_α(β). <div class="displaymath" id="a0000000005">
+  
+</div> where \(\text{proj}_{\alpha }(\beta )\) is the projection of \(\beta \) on \(\alpha \) as shown below. <div class="displaymath" id="a0000000006">
+  
+</div> proj_α(β) :=  α<div class="displaymath" id="a0000000007">
   
 </div> </p>
 </li>
 </ol>
-<p>The rank of the root system is the dimension of the Euclidean space \(E\). </p>
+<p>The <b class="bfseries">rank</b> of the root system is the dimension of the Euclidean space \(E\). </p>
 
  </p>
-<p><span style="None"></span>redAdd a figure here to show the reflection through the hyperplane </p>
 <p>For convenience and in contexts where the inner product space is clear, the root system is often referred to simply as \(\Phi \). </p>
-<p><div class="example_thmwrapper " id="a0000000006">
+<p><div class="example_thmwrapper " id="a0000000008">
   <div class="example_thmheading">
     <span class="example_thmcaption">
     Example
@@ -80,15 +86,15 @@
 <p><p><b class="bfseries">Definition (Reduced Root System).</b>  If a root system satisfies the condition that the only multiples of a root, \(\alpha \), that are in the root system are \(\pm \alpha \), then the root system is said to be <b class="bfseries">reduced</b>. </p>
 
  </p>
-<p><p><b class="bfseries">Definition (Crystallographic Root System).</b>  If a root system satisfies the integrality condition below, then it is said to be <b class="bfseries">crystallographic</b>. <div class="displaymath" id="a0000000007">
+<p><p><b class="bfseries">Definition (Crystallographic Root System).</b>  If a root system satisfies the integrality condition below, then it is said to be <b class="bfseries">crystallographic</b>. <div class="displaymath" id="a0000000009">
   
-</div> β, α:=  Z &#8195;for all  α, βΦ. <div class="displaymath" id="a0000000008">
+</div> β, α= 2  Z  for all  α, βΦ<div class="displaymath" id="a0000000010">
   
 </div> </p>
 
  </p>
 <p>Throughout this text, denote \(e_i\) as the \(i\)-th standard basis vector in \(\mathbb {R}^n\). Then, in combinations such as \(\pm e_i \pm e_j\), the signs may be chosen independently. </p>
-<p><div class="example_thmwrapper " id="a0000000009">
+<p><div class="example_thmwrapper " id="a0000000011">
   <div class="example_thmheading">
     <span class="example_thmcaption">
     Example
@@ -97,16 +103,16 @@
   </div>
   <div class="example_thmcontent">
   <p>The set \(R_1\), shown below, is a root system in \(\mathbb {R}^2\) that is neither reduced nor crystallographic. </p>
-<p><div class="displaymath" id="a0000000010">
+<p><div class="displaymath" id="a0000000012">
   
-</div> R_1 = { ±e_1, (±, ±), (±3, ±1) } <div class="displaymath" id="a0000000011">
+</div> R_1 = { ±e_1, (±, ±), (±3, ±1) } <div class="displaymath" id="a0000000013">
   
 </div> \(R_1\) spans \(\mathbb {R}^2\) and is closed under reflection through the hyperplane orthogonal to any root, hence it is a root system. </p>
 <p>However, is is not a <b class="bfseries">reduced</b> root system since a scalar multiple of an element in \(R_1\), namely \(2 \cdot (\pm \frac{1}{2}, \pm \frac{\sqrt{3}}{2})\), is contained in \(R_1\) itself. It is also not a <b class="bfseries">crystallographic</b> root system because \( \langle \langle e_1, (\pm \frac{\sqrt{3}}{2}, \pm \frac{1}{2}) \rangle \rangle = \frac{\sqrt{3}}{2} \notin \mathbb {Z}\). </p>
 
   </div>
 </div> </p>
-<p><div class="example_thmwrapper " id="a0000000012">
+<p><div class="example_thmwrapper " id="a0000000014">
   <div class="example_thmheading">
     <span class="example_thmcaption">
     Example
@@ -115,16 +121,16 @@
   </div>
   <div class="example_thmcontent">
   <p>If we remove the redundant multiple in \(R_1\) above, we obtain a reduced, non-crystallographic root system \(R_2\). </p>
-<p><div class="displaymath" id="a0000000013">
+<p><div class="displaymath" id="a0000000015">
   
-</div> R_2 = { ±e_1, (±, ±) } <div class="displaymath" id="a0000000014">
+</div> R_2 = { ±e_1, (±, ±) } <div class="displaymath" id="a0000000016">
   
 </div> </p>
 
   </div>
 </div> </p>
 <p>One can also construct examples of non-reduced crystallographic root systems. Consider the following example, </p>
-<p><div class="example_thmwrapper " id="a0000000015">
+<p><div class="example_thmwrapper " id="a0000000017">
   <div class="example_thmheading">
     <span class="example_thmcaption">
     Example
@@ -133,15 +139,15 @@
   </div>
   <div class="example_thmcontent">
   <p>The set \(R_3\) is a root system in \(\mathbb {R}^2\) that is crystallographic but not reduced. </p>
-<p><div class="displaymath" id="a0000000016">
+<p><div class="displaymath" id="a0000000018">
   
-</div> R_3 = { ±e_1, ±e_2, ±2 e_1 } <div class="displaymath" id="a0000000017">
+</div> R_3 = { ±e_1, ±e_2, ±2 e_1 } <div class="displaymath" id="a0000000019">
   
 </div> \(R_3\) spans \(\mathbb {R}^2\) and is closed under reflection through the hyperplane orthogonal to any root, hence it is a root system. It is a <b class="bfseries">crystallographic</b> root system because \(\langle \langle k e_1, e_2 \rangle \rangle = 0\) and \(\langle \langle k e_1, k' e_1 \rangle \rangle = kk' \in \mathbb {Z}\), where \(k,k \in \{ \pm 1, \pm 2\} \). However, is is not a <b class="bfseries">reduced</b> root system since \(2 e_1 \in R_3\). </p>
 
   </div>
 </div> </p>
-<p><div class="example_thmwrapper " id="a0000000018">
+<p><div class="example_thmwrapper " id="a0000000020">
   <div class="example_thmheading">
     <span class="example_thmcaption">
     Example
@@ -149,33 +155,306 @@
     <span class="example_thmlabel">5</span>
   </div>
   <div class="example_thmcontent">
-  <p>The set \(R_4\) is a root system in \(\mathbb {R}^2\) that is reduced and crystallographic. </p>
-<p><div class="displaymath" id="a0000000019">
+  <p>The set \(R_4\) is a root system in \(\mathbb {R}^2\) that is reduced and crystallographic. <div class="displaymath" id="a0000000021">
   
-</div> R_4 = { ±e_1, ±e_2 } <div class="displaymath" id="a0000000020">
+</div> R_4 = { ±e_1, ±e_2 } <div class="displaymath" id="a0000000022">
   
 </div> </p>
 
   </div>
 </div> </p>
-<p>Therefore, we see that a root system may be reduced, crystallographic, both, or neither. This report concerns itself primarily with reduced, crystallographic root systems, simply referred to as root systems henceforth, unless otherwise specified. <br /></p>
+<p>Therefore, we see that a root system may be reduced, crystallographic, both, or neither. <br /></p>
+<p>It should be noted that for crystallographic root systems, the integrality condition implies the second condtion (R2) in root systems since \(\sigma _{\alpha }(\alpha ) = -\alpha \). The integrality condition can be interpretted geometerically as follows–the projection of \(\beta \) on \(\alpha \) is an integer or half-integer multiple of \(\alpha \) since, <div class="displaymath" id="a0000000023">
+  
+</div> proj_α(β) =  β, αα<div class="displaymath" id="a0000000024">
+  
+</div> </p>
+<p>In fact, this is the most restrictive condition since, <div class="displaymath" id="a0000000025">
+  
+</div> β, α= 2  = 2  = 2  Z, <div class="displaymath" id="a0000000026">
+  
+</div> where \(\theta \) is the angle between \(\alpha \) and \(\beta \). </p>
+<p>Furthermore, since \(\langle \langle \beta , \alpha \rangle \rangle \) and \(\langle \langle \alpha , \beta \rangle \rangle \) must be integers, <div class="displaymath" id="a0000000027">
+  
+</div> β, α·α, β= 4 ^2 θZ <div class="displaymath" id="a0000000028">
+  
+</div> </p>
+<p>We restate this result as the following lemma. <div class="lemma_thmwrapper " id="a0000000029">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">6</span>
+  </div>
+  <div class="lemma_thmcontent">
+  <p>For any two roots \(\alpha , \beta \in \Phi \), the product \(\langle \langle \beta , \alpha \rangle \rangle \cdot \langle \langle \alpha , \beta \rangle \rangle \) is an integer. More precisely, \(4 \cos ^2 \theta \in \{  0, 1, 2, 3, 4 \} .\) If \(4 \cos ^2 \theta = 4\), then \(\theta = 0\) or \(\pi \) and \(\beta = \pm \alpha \) which is exactly condition \((R2)\) for a root system. </p>
+
+  </div>
+</div> </p>
+<p>The possible values for \(4 \cos ^2 \theta \) and the corresponding angles between the roots are displayed in the table below. </p>
+<div class="table"  id="a0000000030">
+   <div class="centered"> <table class="tabular">
+  <tr>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-left:1px solid black" 
+        rowspan=""
+        colspan="">
+      <p> \(4\cos ^2\theta \) </p>
+
+    </td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center" 
+        rowspan=""
+        colspan="">
+      <p> \(\langle \langle \alpha , \beta \rangle \rangle \) </p>
+
+    </td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center" 
+        rowspan=""
+        colspan="">
+      <p> \(\langle \langle \beta , \alpha \rangle \rangle \) </p>
+
+    </td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center" 
+        rowspan=""
+        colspan="">
+      <p> \(\| \alpha \|  / \| \beta \| \) </p>
+
+    </td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black" 
+        rowspan=""
+        colspan="">
+      <p> \(\theta \) </p>
+
+    </td>
+  </tr>
+  <tr>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-left:1px solid black" 
+        rowspan=""
+        colspan="">
+      <p>0 </p>
+
+    </td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center" 
+        rowspan=""
+        colspan="">
+      <p> 0 </p>
+
+    </td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center" 
+        rowspan=""
+        colspan="">
+      <p> 0 </p>
+
+    </td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center" 
+        rowspan=""
+        colspan="">
+      <p> N/A </p>
+
+    </td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black" 
+        rowspan=""
+        colspan="">
+      <p> \(\pi /2\) </p>
+
+    </td>
+  </tr>
+  <tr>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-left:1px solid black" 
+        rowspan=""
+        colspan="">
+      
+<p>1 </p>
+
+    </td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center" 
+        rowspan=""
+        colspan="">
+      <p> 1 </p>
+
+    </td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center" 
+        rowspan=""
+        colspan="">
+      <p> 1 </p>
+
+    </td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center" 
+        rowspan=""
+        colspan="">
+      <p> 1 </p>
+
+    </td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black" 
+        rowspan=""
+        colspan="">
+      <p> \(\pi /3\) </p>
+
+    </td>
+  </tr>
+  <tr>
+    <td  style="text-align:center; border-left:1px solid black" 
+        rowspan=""
+        colspan="">&nbsp;</td>
+    <td  style="text-align:center" 
+        rowspan=""
+        colspan="">
+      <p> -1 </p>
+
+    </td>
+    <td  style="text-align:center" 
+        rowspan=""
+        colspan="">
+      <p> -1 </p>
+
+    </td>
+    <td  style="text-align:center" 
+        rowspan=""
+        colspan="">
+      <p> 1 </p>
+
+    </td>
+    <td  style="text-align:center; border-right:1px solid black" 
+        rowspan=""
+        colspan="">
+      <p> \(2\pi /3\) </p>
+
+    </td>
+  </tr>
+  <tr>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-left:1px solid black" 
+        rowspan=""
+        colspan="">
+      
+<p>2 </p>
+
+    </td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center" 
+        rowspan=""
+        colspan="">
+      <p> 1 </p>
+
+    </td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center" 
+        rowspan=""
+        colspan="">
+      <p> 2 </p>
+
+    </td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center" 
+        rowspan=""
+        colspan="">
+      <p> \(\sqrt{2}\) </p>
+
+    </td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black" 
+        rowspan=""
+        colspan="">
+      <p> \(\pi /4\) </p>
+
+    </td>
+  </tr>
+  <tr>
+    <td  style="text-align:center; border-left:1px solid black" 
+        rowspan=""
+        colspan="">&nbsp;</td>
+    <td  style="text-align:center" 
+        rowspan=""
+        colspan="">
+      <p> -1 </p>
+
+    </td>
+    <td  style="text-align:center" 
+        rowspan=""
+        colspan="">
+      <p> -2 </p>
+
+    </td>
+    <td  style="text-align:center" 
+        rowspan=""
+        colspan="">
+      <p> \(\sqrt{2}\) </p>
+
+    </td>
+    <td  style="text-align:center; border-right:1px solid black" 
+        rowspan=""
+        colspan="">
+      <p> \(3\pi /4\) </p>
+
+    </td>
+  </tr>
+  <tr>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-left:1px solid black" 
+        rowspan=""
+        colspan="">
+      
+<p>3 </p>
+
+    </td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center" 
+        rowspan=""
+        colspan="">
+      <p> 1 </p>
+
+    </td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center" 
+        rowspan=""
+        colspan="">
+      <p> 3 </p>
+
+    </td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center" 
+        rowspan=""
+        colspan="">
+      <p> \(\sqrt{3}\) </p>
+
+    </td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black" 
+        rowspan=""
+        colspan="">
+      <p> \(\pi /6\) </p>
+
+    </td>
+  </tr>
+  <tr>
+    <td  style="text-align:center; border-left:1px solid black; border-bottom-style:solid; border-bottom-color:black; border-bottom-width:1px" 
+        rowspan=""
+        colspan="">&nbsp;</td>
+    <td  style="text-align:center; border-bottom-style:solid; border-bottom-color:black; border-bottom-width:1px" 
+        rowspan=""
+        colspan="">
+      <p>-1 </p>
+
+    </td>
+    <td  style="text-align:center; border-bottom-style:solid; border-bottom-color:black; border-bottom-width:1px" 
+        rowspan=""
+        colspan="">
+      <p> -3 </p>
+
+    </td>
+    <td  style="text-align:center; border-bottom-style:solid; border-bottom-color:black; border-bottom-width:1px" 
+        rowspan=""
+        colspan="">
+      <p> \(\sqrt{3}\) </p>
+
+    </td>
+    <td  style="text-align:center; border-right:1px solid black; border-bottom-style:solid; border-bottom-color:black; border-bottom-width:1px" 
+        rowspan=""
+        colspan="">
+      <p> \(5\pi /6\) </p>
+
+    </td>
+  </tr>
+</table> </div> <figcaption>
+  <span class="caption_title"></span> 
+  <span class="caption_ref"></span> 
+  <span class="caption_text">The possible angles between roots where, without loss of generality, the root \(\alpha \) is no longer than the root \(\beta \) under the induced norm in \(E\). A computation also reveals that \(|\langle \beta , \alpha \rangle | \geq |\langle \alpha , \beta \rangle |\).</span> 
+</figcaption> 
+</div>
 <p>Since we aim to classify all root systems, upto isomorhism, it is important to understand when two root systems are isomorphic. <br /></p>
 <p><p><b class="bfseries">Definition (Root System Isomorphism).</b>  Two root systems \((E, \Phi )\) and \((F,\Psi )\) are said to be isomorphic if there exists a linear isomorphism \(\varphi : E \to F\) such that \(\varphi (\Phi ) = \Psi \) and preserves the number \(\langle \langle x, y \rangle \rangle \) for each pair of roots. </p>
 
  </p>
-<p><div class="example_thmwrapper " id="a0000000021">
-  <div class="example_thmheading">
-    <span class="example_thmcaption">
-    Example
-    </span>
-    <span class="example_thmlabel">6</span>
-  </div>
-  <div class="example_thmcontent">
-  <p>The root systems \(R = \{  \pm e_1, \pm e_2 \}  \) and \(R' = \{  \pm e_1 \pm e_2 \} \) are isomorphic. </p>
-
-  </div>
-</div> </p>
-<p><div class="example_thmwrapper " id="a0000000022">
+<p><div class="example_thmwrapper " id="a0000000031">
   <div class="example_thmheading">
     <span class="example_thmcaption">
     Example
@@ -183,12 +462,122 @@
     <span class="example_thmlabel">7</span>
   </div>
   <div class="example_thmcontent">
+  <p>The root systems \(R = \{  \pm e_1, \pm e_2 \}  \) and \(R' = \{  \pm e_1 \pm e_2 \} \) are isomorphic. </p>
+
+  </div>
+</div> </p>
+<p><div class="example_thmwrapper " id="a0000000032">
+  <div class="example_thmheading">
+    <span class="example_thmcaption">
+    Example
+    </span>
+    <span class="example_thmlabel">8</span>
+  </div>
+  <div class="example_thmcontent">
   <p>The root systems \(S = \{  \pm e_1, \pm e_2, \pm e_1 \pm e_2 \}  \) and \(S' = \{  \pm e_1, (\pm \frac{\sqrt{3}}{2}, \pm \frac{1}{2}) \} \) are not isomorphic. </p>
 
+  </div>
+</div> </p>
+<p>Finally, we wish to exclude root systems that can be constructed from direct sums of smaller root systems. This motivates the following definition. <br /></p>
+<p><p><b class="bfseries">Definition (Decomposable Root System).</b>  A Root System \(\Phi \) is said to be <b class="bfseries">decomposable</b> if there is a proper decomposition \(\Phi = \Phi _1 \cup \Phi _2\) such that \(\Phi _1\) and \(\Phi _2\) are root systems in \(E\) and \(\Phi _1 \perp \Phi _2\) (i.e. \(\forall \alpha _1 \in \Phi _1 , \forall \alpha _2 \in \Phi _2, \langle \alpha _1, \alpha _2 \rangle = 0\)). <br /></p>
+<p>Otherwise, \(\Phi \) is said to be <b class="bfseries">indecomposable</b>. Often, in literature, such root systems are also called <b class="bfseries">irreducible</b>. We adopt the term indecomposable to avoid confusion with the notion of reduced root systems. </p>
+
+ </p>
+<p><div class="example_thmwrapper " id="a0000000033">
+  <div class="example_thmheading">
+    <span class="example_thmcaption">
+    Example
+    </span>
+    <span class="example_thmlabel">9</span>
+  </div>
+  <div class="example_thmcontent">
+  <p>The root system \(R_4 = \{  \pm e_1, \pm e_2 \} \) is an indecomposable, reduced, crystallographic root system. </p>
+
+  </div>
+</div> </p>
+<p><div class="example_thmwrapper " id="a0000000034">
+  <div class="example_thmheading">
+    <span class="example_thmcaption">
+    Example
+    </span>
+    <span class="example_thmlabel">10</span>
+  </div>
+  <div class="example_thmcontent">
+  <p>The root system \(R_5 = \{  \pm e_1, \pm e_2 \}  \cup \{  \pm 2 e_1 \} \) is a decomposable root system. </p>
+
+  </div>
+</div> </p>
+<p>This report concerns itself primarily with reduced, crystallographic root systems, simply referred to as root systems henceforth, unless otherwise specified. <a class="footnote" href="#a0000000035">
+  <sup class="footnotemark">1</sup>
+</a> <br /></p>
+<h1 id="a0000000036"> Classifying Root Systems of Small Rank</h1>
+<p><p><b class="bfseries">Theorem (Classification of Rank 1 Root Systems).</b>  The only indecomposable, reduced, crystallographic root systems of rank 1 (upto isomorhism) are \(R_0 = \{  \pm \alpha \} \), where \(\alpha \) is any fixed non-zero real number. </p>
+
+ </p>
+<figure >
+  <p>A1.png[scale=0.25] </p>
+
+</figure>
+<p><div class="proof_wrapper" id="a0000000037">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  
+  </div>
+</div> Let \(\Phi \) be a reduced, crystallographic root system of rank 1. Let \(\alpha \in \Phi \) be a non-zero root. Since \(\Phi \) is reduced, the only multiples of \(\alpha \) in \(\Phi \) are \(\pm \alpha \). Therefore, \(\Phi = \{  \pm \alpha \} \). Clearly, if the root system depends on \(\alpha \) where \(\Phi _{\alpha } = \{  \pm \alpha \} \), then for any non-zero \(\alpha _1, \alpha _2\) in the Euclidean space, \(\Phi _{\alpha _1}\) is isomorphic to \(\Phi _{\alpha _2}\). <div class="proof_wrapper" id="a0000000038">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  
+  </div>
+</div> </p>
+<p><p><b class="bfseries">Theorem (Classification of Rank 2 Root Systems).</b>  There exist only 4 reduced, crystallographic root systems (upto isomorphism). Namely, <div class="displaymath" id="a0000000039">
+  
+</div>  A_2 := {±α_1, ±α_2, ±(α_1 + α_2) } <br />B_2 := {±α_1, ±α_2, ±(2 α_1 + α_2) } <br />D_2 := {±α_1, ±α_2 } <br />G_2 := {±α_1, ±α_2, ±(α_1 + α_2), ±(3α_1 + 2α_2), ±(2α_1 + α_2), ±(3α_1 + α_2) }  <div class="displaymath" id="a0000000040">
+  
+</div> where \(\alpha _1\) and \(\alpha _2\) are roots satisfying the condition that \(\| \alpha _1\|  \leq \| \alpha \| \) for all \(\alpha \) in the root system under the induced norm (i.e. \(\alpha _1\) is the shortest root) and the angle between \(\alpha _1\) and \(\alpha _2\), \(\theta _{\alpha _1, \alpha _2}\) is no smaller than \(\pi / 2\). </p>
+
+ </p>
+<p><div class="proof_wrapper" id="a0000000041">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  
+  </div>
+</div> Notice that the roots must span the space \(\mathbb {R}^2\). Hence, there must be atleast two linearly independent roots. Pick \(\alpha _1\) to be the shortest root (under the inner product), i.e. \(\| \alpha _1\|  \leq \| \alpha \| \) for all \(\alpha \in \mathbb {R}^2\). </p>
+<p>Choose \(\alpha _2\) such that the angle between the two chosen roots is no smaller than \(\pi / 2\). This is always possible, since if the angle were to be smaller than \(\pi / 2\) then \(-\alpha _2\), which must also be a root by (R2), would have an angle no smaller than \(\pi /2\) with \(\alpha _1\). </p>
+<p>Then Table 1.1 enumerates all possible angles between these roots and given the constraints we deduce that there are only four possible cases. <br /></p>
+<p><b class="bfseries">Case</b> \(\theta _{\alpha _1, \alpha _2} = \pi / 2\). In this scenario, the set \(D_2\) is already a root system and any further additions would make it a non-reduced root-system. </p>
+<p><b class="bfseries">Case</b> \(\theta _{\alpha _1, \alpha _2} = 2\pi / 3\). In this case, we begin with the set \(\{ \pm \alpha _1, \pm \alpha _2 \} \) and observe that it is not closed under reflection through the hyperplane othogonal to its roots. It is evident that upon the addition of the element \(\pm (\alpha _1 + \alpha _2)\) into the above set, we do get a closed root system. <div class="proof_wrapper" id="a0000000042">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  
   </div>
 </div>  </p>
 
 </div> <!--main-text -->
+<footer id="footnotes">
+<ol>
+  <li id="a0000000035"> The provided definition differs from the more general definition stated in Lean 4’s MathLib. In Lean 4, root systems are defined over modules instead of Euclidean spaces among other minor differences. As such, when neccessary the proofs in Lean 4 restrict the more general definition to our definition. Of note, root systems in Lean 4 are assumed to be reduced, crystallographic root systems.</li>
+</ol>
+</footer>
 </div> <!-- content-wrapper -->
 </div> <!-- content -->
 </div> <!-- wrapper -->

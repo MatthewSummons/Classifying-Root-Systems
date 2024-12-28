@@ -1,2 +1,0 @@
-import ClassifyingRootSystems.RankOne
-import ClassifyingRootSystems.Lemma
