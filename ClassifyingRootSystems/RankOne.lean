@@ -2,7 +2,7 @@ import Mathlib.LinearAlgebra.RootSystem.Defs
 
 open Set Function
 open Module hiding reflection
-
+----------- Proof of Rank 1 Classification ------------------------------------------------
 variable {ι R M N : Type*}
   [CommRing R] [AddCommGroup M] [Module R M] [AddCommGroup N] [Module R N]
   [OfNat ι 0] [DecidableEq ι]
