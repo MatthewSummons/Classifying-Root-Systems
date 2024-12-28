@@ -634,6 +634,17 @@ INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/fontspec/fontspec.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/fix-cm.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/unicode-math/unicode-math-table.tex
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/unicode-math/unicode-math-table.tex
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/enumitem/enumitem.sty
 INPUT ./macros/common.tex
 INPUT ./macros/common.tex
 INPUT ./macros/common.tex

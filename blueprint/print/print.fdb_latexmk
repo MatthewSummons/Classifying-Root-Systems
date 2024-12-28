@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1735365691 "print.tex" "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.pdf" "print" 1735365698 0
-  "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.aux" 1735365696 992 19530d6d217c2cee6d3b5a1098c5f062 "pdflatex"
-  "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.out" 1735365696 545 578a2f4e98064fccd3696c5275b22750 "pdflatex"
+["pdflatex"] 1735372242 "print.tex" "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.pdf" "print" 1735372246 0
+  "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.aux" 1735372245 992 19530d6d217c2cee6d3b5a1098c5f062 "pdflatex"
+  "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.out" 1735372245 545 578a2f4e98064fccd3696c5275b22750 "pdflatex"
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -48,6 +48,7 @@
   "/usr/local/texlive/2023/texmf-dist/tex/latex/base/size10.clo" 1667332637 8448 c33a4e1cb35cee9b33c2b21033b73e39 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/base/ts1enc.def" 1654720880 8090 4db9ed5f90a74e5a2796a28b05fc0731 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/base/tuenc.def" 1654720880 26445 9ed4a9401f29cbb58ef6909cd5aec01f ""
+  "/usr/local/texlive/2023/texmf-dist/tex/latex/enumitem/enumitem.sty" 1561238569 51697 f8f08183cd2080d9d18a41432d651dfb ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty" 1642282977 162076 2f6d31c4632f2730c57b9c0fda038e15 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/fontspec/fontspec.cfg" 1532898934 549 c4adac819276241fea8eb79c5ab7b99e ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/fontspec/fontspec.sty" 1642282977 1656 7e824878bad4df5a3e8bba4e463d9126 ""
@@ -86,10 +87,10 @@
   "/usr/local/texlive/2023/texmf-dist/web2c/texmf.cnf" 1677365944 40745 87bb86a62d462f93a1efc6b0c65c872e ""
   "/usr/local/texlive/2023/texmf-var/web2c/xetex/xelatex.fmt" 1688120836 10502841 29c6de76b96ecdb3d310ce3165de82fa ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "content.tex" 1735365683 6224 1b9745f0a8dc64a3e71348e9734c901a ""
+  "content.tex" 1735372238 9214 e6289d1b2668286284921e8893cef8db ""
   "macros/common.tex" 1735365189 1071 c550b686896ba9c194ebf239da1d607c ""
   "macros/print.tex" 1732866476 1101 87627b2ec24fef68edc71c13f43f7bab ""
-  "print.tex" 1733390540 1130 3178271777a1294a72e4e3ee6c4e4fea ""
+  "print.tex" 1735372141 1190 1bff07df9c20204b5821535a4052ae06 ""
   (generated)
   "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.aux"
   "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.log"
