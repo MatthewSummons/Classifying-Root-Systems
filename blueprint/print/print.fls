@@ -578,6 +578,7 @@ INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics-def/xetex.def
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics-def/xetex.def
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics-def/xetex.def
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics-def/xetex.def
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/hyperref/hyperref.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/unicode-math/unicode-math.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/unicode-math/unicode-math.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/unicode-math/unicode-math.sty

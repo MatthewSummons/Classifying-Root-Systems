@@ -4,7 +4,7 @@
 \begin{nameddefinition}{Root System}
     Let $E$ be a finite-dimensional Euclidean space with an inner product $\langle \cdot, \cdot \rangle$. \newline
     
-    A \textbf{root system} in $E$ is a tuple (E, $\Phi$), where $\Phi$ is a finite, non-empty set of non-zero vectors (called
+    A \textbf{root system} $\Phi$ in $E$ is a finite, non-empty set of non-zero vectors (called
     \textbf{roots}) satisfying the following properties:
     
     \begin{enumerate}[label=(R{\arabic*})]
@@ -23,10 +23,13 @@
     The \textbf{rank} of the root system is the dimension of the Euclidean space $E$.
 \end{nameddefinition}
 
-For convenience and in contexts where the inner product space is clear, the root system is often referred to simply as $\Phi$.
-
 \begin{example}
     $R_0 = \{\pm \alpha\}$, where $\alpha$ is any fixed non-zero real number, constitutes a root system in $\mathbb{R}$.
+\end{example}
+
+\begin{example}
+    For any root system $\Phi$ in $E$, the set $\alpha\Phi$ (i.e. scaling every root by 
+    $\alpha$) for any non-zero scalar $\alpha$ is also a root system in $E$
 \end{example}
 
 \begin{nameddefinition}{Reduced Root System}
@@ -37,7 +40,7 @@ For convenience and in contexts where the inner product space is clear, the root
 \begin{nameddefinition}{Crystallographic Root System}
     If a root system satisfies the integrality condition below, then it is said to be \textbf{crystallographic}.
     \begin{equation*}
-        \langle \langle \beta, \alpha \rangle \rangle = 2 \frac{ \langle \alpha, \beta \rangle}{\langle \alpha, \alpha \rangle}
+        \langle \langle \beta, \alpha \rangle \rangle := 2 \frac{ \langle \alpha, \beta \rangle}{\langle \alpha, \alpha \rangle}
         \in \mathbb{Z} \ \text{for all} \ \alpha, \beta \in \Phi
     \end{equation*}
 \end{nameddefinition}
@@ -55,9 +58,9 @@ Then, in combinations such as $\pm e_i \pm e_j$, the signs may be chosen indepen
     $R_1$ spans $\mathbb{R}^2$ and is closed under reflection through the hyperplane orthogonal to any root,
     hence it is a root system.
     
-    However, is is not a \textbf{reduced} root system since a scalar multiple of an element in $R_1$,
-    namely $2 \cdot (\pm \frac{1}{2}, \pm \frac{\sqrt{3}}{2})$, is contained in $R_1$ itself. 
-    It is also not a \textbf{crystallographic} root system because 
+    However, is is not a reduced root system since a scalar multiple of an element in $R_1$,
+    namely $2 \cdot (\pm \frac{\sqrt{3}}{2}, \pm \frac{1}{2})$, is contained in $R_1$ itself. 
+    It is also not a crystallographic root system because 
     $\langle \langle e_1, (\pm \frac{\sqrt{3}}{2}, \pm \frac{1}{2}) \rangle \rangle = \frac{\sqrt{3}}{2} \notin \mathbb{Z}$.
 \end{example}
 
@@ -82,10 +85,10 @@ One can also construct examples of non-reduced crystallographic root systems. Co
     \end{equation*}
     $R_3$ spans $\mathbb{R}^2$ and is closed under reflection through the hyperplane orthogonal to any root,
     hence it is a root system.
-    It is a \textbf{crystallographic} root system because
+    It is a crystallographic root system because
     $\langle \langle k e_1, e_2 \rangle \rangle = 0$ and $\langle \langle k e_1, k' e_1 \rangle \rangle = kk' \in \mathbb{Z}$,
     where $k,k \in \{\pm 1, \pm 2\}$.
-    However, is is not a \textbf{reduced} root system since $2 e_1 \in R_3$.
+    However, is is not a reduced root system since $2 e_1 \in R_3$.
 \end{example}
 
 
@@ -100,8 +103,7 @@ One can also construct examples of non-reduced crystallographic root systems. Co
 
 Therefore, we see that a root system may be reduced, crystallographic, both, or neither. \newline
 
-It should be noted that for crystallographic root systems, the integrality condition implies the second condtion (R2)
-in root systems since $\sigma_{\alpha}(\alpha) = -\alpha$.
+
 The integrality condition can be interpretted geometerically as follows--the projection of $\beta$ on $\alpha$ is
 an integer or half-integer multiple of $\alpha$ since,
 
@@ -161,18 +163,23 @@ the root $\alpha$ is no longer than the root $\beta$ under the induced norm in $
 A computation also reveals that $|\langle \beta, \alpha \rangle| \geq |\langle \alpha, \beta \rangle|$.}
 \end{table}
 
-Since we aim to classify all root systems, upto isomorhism, it is important to understand when two root systems are
+Since we aim to classify all root systems, up to isomorphism, it is important to understand when two root systems are
 isomorphic. \newline
 
 \begin{nameddefinition}{Root System Isomorphism}
     Two root systems $(E, \Phi)$ and $(F,\Psi)$ are said to be isomorphic if there exists a linear isomorphism
     $\varphi: E \to F$ such that $\varphi(\Phi) = \Psi$
-    and preserves the number $\langle \langle x, y \rangle \rangle$ for each pair of roots.
+    and preserves the number $\langle \langle x, y \rangle \rangle$ for each pair of roots i.e 
+    for any roots $\alpha, \beta \in \Phi$, $\langle \langle \phi(\alpha), \phi(\beta) \rangle \rangle = \langle \langle \alpha, \beta \rangle \rangle$.
 \end{nameddefinition}
 
 \begin{example}
-    The root systems $R = \{ \pm e_1, \pm e_2 \} $ and $R' = \{ \pm e_1 \pm e_2 \}$ are isomorphic.
+    The root systems $R = \{ \pm e_1, \pm e_2 \} $ and $R' = \{ \pm e_1 \pm e_2 \}$ are isomorphic. 
+    Consider the map $\phi(x, y) = (x + y, x-y)$. This maps $e_1$ to $e_1 + e_2$ and $e_2$ to $e_1 - e_2$.
+    It is easily verifiable that it satisfies the conditions for a root system isomorphism.
 \end{example}
+
+
 
 \begin{example}
     The root systems
@@ -206,13 +213,16 @@ unless otherwise specified. \footnote{
     The provided definition differs from the more general definition stated in Lean 4's MathLib.
     In Lean 4, root systems are defined over modules instead of Euclidean spaces among other minor differences.
     As such, when neccessary the proofs in Lean 4 restrict the more general definition to our definition.
-    Of note, root systems in Lean 4 are assumed to be reduced, crystallographic root systems.} \newline
+    Of note, root systems in Lean 4 are assumed to be reduced, crystallographic root systems. The precise 
+    axioms can be found in \hyperlink{https://leanprover-community.github.io/mathlib4_docs//Mathlib/LinearAlgebra/RootSystem/Defs.html}{Lean 4's MathLib}}. \newline
 
-    \section{Classifying Root Systems of Small Rank}
+\section{Classifying Root Systems of Small Rank}
 
 % Classification of Rank 1 Root Systems
 \begin{namedtheorem}{Classification of Rank 1 Root Systems}
-    The only indecomposable, reduced, crystallographic root systems of rank 1 (upto isomorhism) is $A_1 = \{ \pm \alpha \}$ [See Figure 1.1], where $\alpha$ is any fixed non-zero real number.
+    \lean{rank_one_classification}
+    \leanok
+    The only indecomposable, reduced, crystallographic root systems of rank 1 (up to isomorhpism) is $A_1 = \{ \pm \alpha \}$ [See Figure 1.1], where $\alpha$ is any fixed non-zero real number.
 \end{namedtheorem}
 
 \begin{proof}
@@ -232,7 +242,7 @@ unless otherwise specified. \footnote{
 \end{figure}
 
 \begin{namedtheorem}{Classification of Rank 2 Root Systems}
-    There exist only 4 reduced, crystallographic root systems (upto isomorphism). Namely,
+    There exist only 4 reduced, crystallographic root systems (up to isomorphism). Namely,
     \begin{equation*}
     \begin{aligned}
         A_1 \times A_1 &:= \{\pm \alpha_1, \pm \alpha_2 \} \\
@@ -286,5 +296,19 @@ unless otherwise specified. \footnote{
         $\sigma_{\alpha_2}(\alpha_1) = 3\alpha_1 + \alpha_2$,
         $\sigma_{\alpha_1}(\alpha_1 + \alpha_2) = 2 \alpha_1 + \alpha_2$,
         $\sigma_{\alpha_2}(3 \alpha_1 + \alpha_2) = 3 \alpha_1 + 2 \alpha_2$.
-    Thus we obtain our final root system $G_2$.
+        Thus we obtain our final root system $G_2$.
+    
+    Since all these root systems are not ismoprhic, we can conclude that the
+    given root systems categorize all root systems of rank 2.
 \end{proof}
+
+% \begin{figure}
+% \centering
+% \begin{tabular}{cc}
+% \subcaptionbox{caption}{\includegraphics[width = 2in]{A1xA1.png}} &
+% \subcaptionbox{caption}{\includegraphics[width = 2in]{A2.png}} \\
+% \subcaptionbox{caption}{\includegraphics[width = 2in]{B2.png}} &
+% \subcaptionbox{caption}{\includegraphics[width = 2in]{G2.png}}\\
+% \end{tabular}
+% \caption{caption}
+% \end{figure}

@@ -1,16 +1,16 @@
 # Fdb version 4
-["biber /Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print"] 1735451570 "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.bcf" "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.bbl" "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print" 1735451583 0
+["biber /Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print"] 1735458535 "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.bcf" "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.bbl" "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print" 1735458852 0
   "./references.bib" 1735451558 1849 7d8d79fefedc82e04a77221a74d676b3 ""
-  "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.bcf" 1735451582 108194 923766740a3bd43c0d54b82428b80e84 "pdflatex"
+  "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.bcf" 1735458851 108194 03080d78e5bdbccb8a5383620ed6ccfb "pdflatex"
   (generated)
   "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.bbl"
   "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.blg"
   (rewritten before read)
-["pdflatex"] 1735451579 "print.tex" "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.pdf" "print" 1735451583 0
-  "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.aux" 1735451582 4823 dd7f762f60fbd512dee092c17da77d03 "pdflatex"
-  "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.bbl" 1735451574 7248 4f178d0728966b20da4c6d0264e5ca8f "biber /Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print"
-  "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.out" 1735451582 1222 a09e32c6bb77dceff622b0a2db046607 "pdflatex"
-  "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.run.xml" 1735451582 2347 44e769b1abf6e0ab732b629986805ece "pdflatex"
+["pdflatex"] 1735458844 "print.tex" "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.pdf" "print" 1735458852 0
+  "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.aux" 1735458851 4823 2ef31bf5be76f032d40a0eaf6abb3724 "pdflatex"
+  "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.bbl" 1735458543 7248 4f178d0728966b20da4c6d0264e5ca8f "biber /Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print"
+  "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.out" 1735458851 1222 a09e32c6bb77dceff622b0a2db046607 "pdflatex"
+  "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.run.xml" 1735458851 2347 44e769b1abf6e0ab732b629986805ece "pdflatex"
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -112,8 +112,8 @@
   "/usr/local/texlive/2023/texmf-dist/web2c/texmf.cnf" 1677365944 40745 87bb86a62d462f93a1efc6b0c65c872e ""
   "/usr/local/texlive/2023/texmf-var/web2c/xetex/xelatex.fmt" 1688120836 10502841 29c6de76b96ecdb3d310ce3165de82fa ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "Chapters/chapter_1.tex" 1735450820 14092 e52ed489708a0a5e0fa83e2e10a564be ""
-  "Chapters/chapter_2.tex" 1735451578 19103 7ea619fdf912b6498b478e7145210b5e ""
+  "Chapters/chapter_1.tex" 1735458161 15018 c4ab1cbffe58ba9644871d5246309cc0 ""
+  "Chapters/chapter_2.tex" 1735458789 19117 ff8120cae04e16dd00a05003644da490 ""
   "content.tex" 1735448341 447 8f249f48cd3c74d3d83c06cdacb13791 ""
   "images//./Dynkin.png" 1735439755 175239 784712340dff48694b00a5c7314355f6 ""
   "images//./Dynkin_Collapse.png" 1735443130 89353 e1fda92f26845544bcf0bb866325c343 ""
@@ -121,7 +121,7 @@
   "images//A1.png" 1735412432 7352 fe61dcdb829ccb4571e97bc56f640066 ""
   "macros/common.tex" 1735365189 1071 c550b686896ba9c194ebf239da1d607c ""
   "macros/print.tex" 1732866476 1101 87627b2ec24fef68edc71c13f43f7bab ""
-  "preamble.sty" 1735449669 319 bfad11b883c91a239d666a7920d48bf9 ""
+  "preamble.sty" 1735456915 329 082ae582de67998a2d92ffba84e5634c ""
   "print.tex" 1735412792 1028 b2a93fb90ff8d582fb27f91382ca4d6b ""
   (generated)
   "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.aux"

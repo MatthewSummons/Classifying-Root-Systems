@@ -36,7 +36,7 @@
   <a href="sect0001.html#a0000000004"><span class="toc_ref"></span> <span class="toc_entry">Defining Root Systems</span></a>
  </li>
 <li class="">
-  <a href="sect0001.html#a0000000036"><span class="toc_ref"></span> <span class="toc_entry">Classifying Root Systems of Small Rank</span></a>
+  <a href="sect0001.html#a0000000037"><span class="toc_ref"></span> <span class="toc_entry">Classifying Root Systems of Small Rank</span></a>
  </li>
 
   </ul>
@@ -46,10 +46,10 @@
   <span class="expand-toc">▼</span>
   <ul class="sub-toc-1 active">
      <li class="">
-  <a href="sect0002.html#a0000000044"><span class="toc_ref"></span> <span class="toc_entry">Simple Roots</span></a>
+  <a href="sect0002.html#a0000000045"><span class="toc_ref"></span> <span class="toc_entry">Simple Roots</span></a>
  </li>
 <li class="">
-  <a href="sect0002.html#a0000000045"><span class="toc_ref"></span> <span class="toc_entry">Properties of Simple Roots</span></a>
+  <a href="sect0002.html#a0000000046"><span class="toc_ref"></span> <span class="toc_entry">Properties of Simple Roots</span></a>
  </li>
 <li class="">
   <a href="sect0002.html#img:dynkin"><span class="toc_ref"></span> <span class="toc_entry">Classification of Root Systems</span></a>
@@ -66,33 +66,44 @@
 
 <div class="main-text">
 <h1 id="a0000000003"> Classifying Root Systems</h1>
-<p> The classification of root systems can be found in several textbooks. <span style="None"></span>redreferences !!! </p>
-<h1 id="a0000000044"> Simple Roots</h1>
-<p>For a particular root system \(\Phi \) one may chose a subset (not neccesarily unique) of roots called <b class="bfseries">simple roots</b> that are, in essence, building blocks of all the other roots in the root system. <br /></p>
-<p>For each root, \(\alpha \in \Phi \), there exists a uniqe hyperplane passing through the origin that is orthogonal to this root. Since the root system is only finite, the finite union of all such hyperplanes can never be the whole ambient space, \(E\). <br /></p>
-<p>As such, it is always possible to find a vector \(d \in E\) such that for any root \(\alpha \), \(\langle \alpha , d \rangle \not= 0\). One partition the root system into two sets, \(R^+(d)\) and \(R^-(d)\), where \(R^+(d) = \{  \alpha \in \Phi | {\lt}\langle \alpha , d \rangle {\gt} 0\} \) and \(R^-(d) = -R^+(d)\). <br /></p>
-<p><p><b class="bfseries">Definition (Simple Root).</b>  Let \(d\) be a vector in a finite dimensional inner product space \(E\), such that for any \(\alpha \) in the root system, \(\Phi \), \(\langle \alpha , d \rangle \not= 0\). If \(\alpha \) belongs to \(R^+(d)\) then it is a positive root, otherwise it is defined to be a negative root. A positive root is called <b class="bfseries">simple</b> if it is not the sum of any two other positive roots. The set of all such simple roots of a root system \(\Phi \) is called a <b class="bfseries">basis</b> for \(\Phi \). </p>
+<p> The classification of root systems can be found in several textbooks, a few common references include <span class="cite">
+	[
+</span>, <span class="cite">
+	[
+</span> and <span class="cite">
+	[
+</span>. The classification presented ahead follows Humphrey’s proof in <span class="cite">
+	[
+</span>. </p>
+<h1 id="a0000000045"> Simple Roots</h1>
+<p>For a particular root system \(\Phi \) one may choose a subset (not necesarily unique) of roots called <b class="bfseries">simple roots</b> that are, in essence, building blocks of all the other roots in the root system. <br /></p>
+<p>For each root, \(\alpha \in \Phi \), there exists a unique hyperplane passing through the origin that is orthogonal to this root. Since the root system is finite, the finite union of all such hyperplanes can never be the whole ambient space, \(E\). <br /></p>
+<p>As such, it is always possible to find a vector \(d \in E\) such that for any root \(\alpha \), \(\langle \alpha , d \rangle \not= 0\). One partitions the root system into two sets, \(R^+(d)\) and \(R^-(d)\), where \(R^+(d) = \{  \alpha \in \Phi | {\lt}\langle \alpha , d \rangle {\gt} 0\} \) and \(R^-(d) = -R^+(d)\). <br /></p>
+<p><p><b class="bfseries">Definition (Simple Root).</b>  Let \(d\) be a vector in a finite dimensional inner product space \(E\), such that for any \(\alpha \) in the root system \(\Phi \), \(\langle \alpha , d \rangle \not= 0\). If \(\alpha \) belongs to \(R^+(d)\) then it is a positive root; otherwise, it is defined to be a negative root. A positive root is called <b class="bfseries">simple</b> if it is not the sum of any two other positive roots. The set of all such simple roots of a root system \(\Phi \) is called a <b class="bfseries">basis</b> for \(\Phi \). </p>
 
  </p>
-<p>Fortunately, the choice of the vector \(d\) above is not important. Since the following remark is not directly related to the classification of root systems, it is only discussed breifly, one can refer to the literature to learn more[<span style="None"></span>redWeyl Groups and Chamber references]. <br /></p>
-<p>For every root \(\alpha \) in a root system \(\Phi \), there exists a hyperplace orthogonal to the root and the union of all such hyplerplanes cut the ambient space \(E\) into open, connected regions called <b class="bfseries">Weyl Chambers</b>. <br /></p>
-<p>Interestingly, one may construct a one-to-one correspondence between all bases for a root systems and Weyl Chambers. </p>
-<p><span style="None"></span>redAdd lemma 1 and 2 from 3.1 and the bijection </p>
-<h1 id="a0000000045"> Properties of Simple Roots</h1>
+<p>Fortunately, the choice of the vector \(d\) above is not important. Since the following remark is not directly related to the classification of root systems, it is only discussed briefly, but one may refer to the literature read more <span class="cite">
+	[
+</span>. <br /></p>
+<p>For every root \(\alpha \) in a root system \(\Phi \), there exists a hyperplane orthogonal to the root and the union of all such hyperplanes cut the ambient space \(E\) into open, connected regions called <b class="bfseries">Weyl Chambers</b>. <br /></p>
+<p>Interestingly, one may construct a one-to-one correspondence between all bases for a root system and Weyl Chambers <span class="cite">
+	[
+</span>. </p>
+<h1 id="a0000000046"> Properties of Simple Roots</h1>
 <p>We establish several useful lemmas that we use later. </p>
 <p><div class="lemma_thmwrapper " id="lemma:a-b">
   <div class="lemma_thmheading">
     <span class="lemma_thmcaption">
     Lemma
     </span>
-    <span class="lemma_thmlabel">11</span>
+    <span class="lemma_thmlabel">12</span>
   </div>
   <div class="lemma_thmcontent">
   <p> If the roots \(\alpha , \beta \) in a root system \(\Phi \) are not proportional and \(\langle \alpha , \beta \rangle {\gt} 0\), then \(\alpha - \beta \in \Phi \). </p>
 
   </div>
 </div> </p>
-<p><div class="proof_wrapper" id="a0000000046">
+<p><div class="proof_wrapper" id="a0000000047">
   <div class="proof_heading">
     <span class="proof_caption">
     
@@ -102,7 +113,7 @@
   <div class="proof_content">
   
   </div>
-</div> It follows that \(\langle \langle \alpha , \beta \rangle \rangle {\gt} 0\). Using Table <a href="sect0001.html#table:enum">6</a>, we see that either \(\langle \langle \alpha , \beta \rangle \rangle \) or \(\langle \langle \beta , \alpha \rangle \rangle \) is 1. If \(\langle \langle \alpha , \beta \rangle \rangle \) is 1, then \(\sigma _{\beta }(\alpha ) = \alpha - \beta \in \Phi \). Otherwise, \(\sigma _{\alpha }(-\beta ) = \alpha - \beta \in \Phi \). <div class="proof_wrapper" id="a0000000047">
+</div> It follows that \(\langle \langle \alpha , \beta \rangle \rangle {\gt} 0\). Using Table <a href="sect0001.html#table:enum">7</a>, we see that either \(\langle \langle \alpha , \beta \rangle \rangle \) or \(\langle \langle \beta , \alpha \rangle \rangle \) is 1. If \(\langle \langle \alpha , \beta \rangle \rangle \) is 1, then \(\sigma _{\beta }(\alpha ) = \alpha - \beta \in \Phi \). Otherwise, \(\sigma _{\alpha }(-\beta ) = \alpha - \beta \in \Phi \). <div class="proof_wrapper" id="a0000000048">
   <div class="proof_heading">
     <span class="proof_caption">
     
@@ -118,14 +129,14 @@
     <span class="lemma_thmcaption">
     Lemma
     </span>
-    <span class="lemma_thmlabel">12</span>
+    <span class="lemma_thmlabel">13</span>
   </div>
   <div class="lemma_thmcontent">
   <p> Let \(\alpha \) and \(\beta \) be distinct simple roots in the root system \(\Phi \), then \(\langle \alpha , \beta \rangle \leq 0\). </p>
 
   </div>
 </div> </p>
-<p><div class="proof_wrapper" id="a0000000048">
+<p><div class="proof_wrapper" id="a0000000049">
   <div class="proof_heading">
     <span class="proof_caption">
     
@@ -135,7 +146,7 @@
   <div class="proof_content">
   
   </div>
-</div> Assume to the contrary that \(\langle \alpha , \beta \rangle \leq 0\). Then from the previous lemma (lemma <a href="sect0002.html#lemma:a-b">11</a>), we know that \(\gamma := \alpha - \beta \in \Phi \} \). If \(\gamma \) is a positive root, then \(\alpha = \gamma + \beta \) is also positive, contradicting our hypothesis. Otherwise, \(-\gamma \) must be a positive root, in which case \(\beta = \alpha + (-\gamma )\) is a positive root, yet again contradicting our hypothesis. <div class="proof_wrapper" id="a0000000049">
+</div> Assume to the contrary that \(\langle \alpha , \beta \rangle \leq 0\). Then from the previous lemma (lemma <a href="sect0002.html#lemma:a-b">12</a>), we know that \(\gamma := \alpha - \beta \in \Phi \} \). If \(\gamma \) is a positive root, then \(\alpha = \gamma + \beta \) is also positive, contradicting our hypothesis. Otherwise, \(-\gamma \) must be a positive root, in which case \(\beta = \alpha + (-\gamma )\) is a positive root, yet again contradicting our hypothesis. <div class="proof_wrapper" id="a0000000050">
   <div class="proof_heading">
     <span class="proof_caption">
     
@@ -146,13 +157,15 @@
   
   </div>
 </div> </p>
-<p><span style="None"></span>redreferences !!!! </p>
+<p>The proofs for the following lemmas can be found in <span class="cite">
+	[
+</span>. </p>
 <p>The following lemma justifies the use of the term basis for the set of all simple roots. <div class="lemma_thmwrapper " id="lemma:admit_config">
   <div class="lemma_thmheading">
     <span class="lemma_thmcaption">
     Lemma
     </span>
-    <span class="lemma_thmlabel">13</span>
+    <span class="lemma_thmlabel">14</span>
   </div>
   <div class="lemma_thmcontent">
   <p> The simple roots are linearly independent and span their ambient space. </p>
@@ -164,35 +177,35 @@
     <span class="lemma_thmcaption">
     Lemma
     </span>
-    <span class="lemma_thmlabel">14</span>
+    <span class="lemma_thmlabel">15</span>
   </div>
   <div class="lemma_thmcontent">
-  <p> A root system is decomposable if and only if its base is decomposable </p>
+  <p> A root system is decomposable if and only if its basis is decomposable </p>
 
   </div>
 </div> </p>
 <h1 id="img:dynkin"> Classification of Root Systems</h1>
-<p>From lemma <a href="sect0002.html#lemma:a.b_leq_0">12</a>, we may deduce that for any two simple roots, the roots are either orthogonal or the angle between them is obtuse. Much like the proof for the classification of Rank 2 Root Systems, from Table <a href="sect0001.html#table:enum">6</a> we see that the angle between the aforementioned roots must be either \(\pi /2\), \(2\pi /3\), \(3\pi /4\) or \(5\pi /6\). This information can be encoded into a graph. <br /></p>
-<p><p><b class="bfseries">Definition (Coxeter Graph).</b>  The <b class="bfseries">Coxeter Graph</b> of a root system \(\Phi \), is a (multi)graph, with each vertex corresponds to simple root of \(\Phi \) and every pair of vertices \(\hat\alpha , \hat\beta \) are connected by \(\langle \langle \alpha , \beta \rangle \rangle \langle \langle \beta , \alpha \rangle \rangle = 4cos^2\theta \) edges, where \(\theta \) is the angle between the simple roots \(\alpha , \beta \in \Phi \) corresponding to the vertices in the graph. </p>
+<p>From lemma <a href="sect0002.html#lemma:a.b_leq_0">13</a>, we may deduce that for any two simple roots, the roots are either orthogonal or the angle between them is obtuse. Much like the proof for the classification of Rank 2 Root Systems, from Table <a href="sect0001.html#table:enum">7</a> we see that the angle between the aforementioned roots must be either \(\pi /2\), \(2\pi /3\), \(3\pi /4\) or \(5\pi /6\). This information can be encoded into a graph. <br /></p>
+<p><p><b class="bfseries">Definition (Coxeter Graph).</b>  The <b class="bfseries">Coxeter Graph</b> of a root system \(\Phi \), is a (multi)graph, with each vertex corresponds to a simple root of \(\Phi \) and every pair of vertices \(\hat\alpha , \hat\beta \) are connected by \(\langle \langle \alpha , \beta \rangle \rangle \langle \langle \beta , \alpha \rangle \rangle = 4cos^2\theta \) edges, where \(\theta \) is the angle between the simple roots \(\alpha , \beta \in \Phi \) corresponding to the vertices in the graph. </p>
 
  </p>
-<p>Coxeter graphs do not however caprture all essential information about the simple roots of a root system. In particular, the relative lengths of the roots (like when the angle between the roots is \(3\pi /4\) or \(5\pi /6\)) is not represented by the Coxeter Graph. <br /></p>
+<p>Coxeter graphs do not however capture all essential information about the simple roots of a root system. In particular, the relative lengths of the roots (like when the angle between the roots is \(3\pi /4\) or \(5\pi /6\)) are not represented by the Coxeter Graph. <br /></p>
 <p><p><b class="bfseries">Definition (Dynkin Diagram).</b>  A <b class="bfseries">Dynkin Diagram</b> of a root system is a Coxeter graph of the root system with arrows on the double or triple edges to indicate the shorter root </p>
 
  </p>
 <p>In order to classify indecomposoable root systems it suffices to classify all possible Coxeter Graphs, since the Dynkin Diagrams can be obtained from the Coxeter graphs by adding the arrows. <br /></p>
-<p><p><b class="bfseries">Definition (Admissable Configuration).</b>  A linearly independent set of \(n\) unit vectors \(\{ v_1, \dots , v_n \} \) that spans the ambient space \(E\) is called an admissable configuration if for all \(i\not=j, \langle v_i, v_j \rangle \leq 0\) and \(4 \langle v_i, v_j \rangle ^2 \in \{ 0, 1, 2, 3\} \). </p>
+<p><p><b class="bfseries">Definition (Admissable Configuration).</b>  A linearly independent set of \(n\) unit vectors \(\{ v_1, \dots , v_n \} \) that spans the ambient space \(E\) is called an admissible configuration if for all \(i\not=j, \langle v_i, v_j \rangle \leq 0\) and \(4 \langle v_i, v_j \rangle ^2 \in \{ 0, 1, 2, 3\} \). </p>
 
  </p>
-<p>Observe that the set of normalized simple roots of any root system is an admissable confifugration by lemma <a href="sect0002.html#lemma:admit_config">13</a>. <br /></p>
-<p><p><b class="bfseries">Definition (Admissable Diagram).</b>  A Coxeter graph of an admissable configuration is called an admissable diagram </p>
+<p>Observe that the set of normalized simple roots of any root system is an admissible confifugration by lemma <a href="sect0002.html#lemma:admit_config">14</a>. <br /></p>
+<p><p><b class="bfseries">Definition (Admissable Diagram).</b>  A Coxeter graph of an admissible configuration is called an admissible diagram </p>
 
  </p>
-<p>From lemma <a href="sect0002.html#lemma:decomp">14</a>, we know that the basis of an indecomposable root system cannot be decomposed into mutually orthogonal subsets. Therefore, the corresponding Coxter graph for an indecomposable root system will also be connected. As such, to classify all indecompsable root systems it is sufficient to consider only connected admissable diagrams. This leads directly to the main classification theorem. <br /></p>
+<p>From lemma <a href="sect0002.html#lemma:decomp">15</a>, we know that the basis of an indecomposable root system cannot be decomposed into mutually orthogonal subsets. Therefore, the corresponding Coxter graph for an indecomposable root system will also be connected. As such, to classify all indecompsable root systems it is sufficient to consider only connected admissible diagrams. This leads directly to the main classification theorem. <br /></p>
 <p><p><b class="bfseries">Theorem (Classification of Indecompsable Root Systems).</b>  The Dynkin Diagram of an indecomposable root system belongs to one of the nine families shown in Fig. ??. </p>
 
  </p>
-<figure id="a0000000050">
+<figure id="a0000000051">
   
 <div class="centered">[scale=0.3]./Dynkin.png <figcaption>
   <span class="caption_title"></span> 
@@ -201,7 +214,7 @@
 </figcaption> </div>
 
 </figure>
-<p><div class="proof_wrapper" id="a0000000051">
+<p><div class="proof_wrapper" id="a0000000052">
   <div class="proof_heading">
     <span class="proof_caption">
     
@@ -211,21 +224,21 @@
   <div class="proof_content">
   
   </div>
-</div> We begin by classifying connected admissable diagrams and then proceeding to the Dynkin Diagrams. <br /></p>
+</div> We begin by classifying connected admissible diagrams and then proceeding to the Dynkin Diagrams. <br /></p>
 <p>Since the proof is large, it is split into the following steps. </p>
 <ol class="enumerate">
-  <li><p>Any subdiagram of an admissable diagram is also admissable. If the set \(\{ v_1, \dots , v_n \} \) is an admissible configuration, then clearly any subset of it is also an admissible configuration (in the space it spans). The same holds for admissible diagrams. </p>
+  <li><p>Any subdiagram of an admissible diagram is also admissible. If the set \(\{ v_1, \dots , v_n \} \) is an admissible configuration, then clearly any subset of it is also an admissible configuration (in the space it spans). The same holds for admissible diagrams. </p>
 </li>
-  <li><p>A connected admissable diagram is a tree. Let \(v = \sum _{i=1}^{n} v_i\). Evidently, \(v \not= 0\), since the admissable configuration is linearly independent. Then, <div class="displaymath" id="a0000000052">
+  <li><p>A connected admissible diagram is a tree. Let \(v = \sum _{i=1}^{n} v_i\). Evidently, \(v \not= 0\), since the admissible configuration is linearly independent. Then, <div class="displaymath" id="a0000000053">
   
-</div> 0 &lt; v, v = v = ∑_i=1^n v_i + ∑_i &lt; j 2 v_i, v_j = n + 2 ∑_i &lt; j v_i, v_j <div class="displaymath" id="a0000000053">
+</div> 0 &lt; v, v = v = ∑_i=1^n v_i + ∑_i &lt; j 2 v_i, v_j = n + 2 ∑_i &lt; j v_i, v_j <div class="displaymath" id="a0000000054">
   
 </div> </p>
 <p>If the vertices \(v_i\) and \(v_j\) are connected, then \(2 \langle v_i, v_j \rangle \) must take on a value in the set \(\{ -1, -\sqrt{2}, -\sqrt{3}\} \). In particular, \(2 \langle v_i, v_j \rangle \leq - 1\), hence the number of terms in the sum above cannot exceed \(n-1\), so the number of distinct connected vertices must also be at most \(n-1\). Since the diagram is connected, there must be at least \(n-1\) such pairs. This leads to the conclusion that the number of distinct connected pairs of vertices is exaqctly \(n-1\) and thus the diagram is a tree. </p>
 </li>
-  <li><p>No more than three edges (counting multiplicities) can originate from the same vertex. Let \(c\) be any vertex (we refer to its corresponding root as \(c\) as well when there is no ambiguity) and \(\{ v_1, \dots v_k \} \) be all vertices that are connected to \(c\). Since the graph has no cycles, there are no edges between any \(v_i\) and \(v_j\). Therefore, \(\langle v_i, v_j \rangle = 0\) when \(i \not= j\) and \(\{ v_1, \dots v_k \} \) is an orthonormal set. Morevoer, since the simple roots are linearly independent, \(c\) can not be expressed as a linear combination of \(v_i\)’s. Hence \(c\) has a non-zero projection to the orthogonal complement of \(\text{span}\{ v_1, \dots v_k\} \). Normalize this projection and denote it by \(v_0\). Then \(\{ v_0, v_1, \dots v_k \} \) is an orthonormal set and we can express \(c\) as follows: <div class="displaymath" id="a0000000054">
+  <li><p>No more than three edges (counting multiplicities) can originate from the same vertex. Let \(c\) be any vertex (we refer to its corresponding root as \(c\) as well when there is no ambiguity) and \(\{ v_1, \dots v_k \} \) be all vertices that are connected to \(c\). Since the graph has no cycles, there are no edges between any \(v_i\) and \(v_j\). Therefore, \(\langle v_i, v_j \rangle = 0\) when \(i \not= j\) and \(\{ v_1, \dots v_k \} \) is an orthonormal set. Morevoer, since the simple roots are linearly independent, \(c\) can not be expressed as a linear combination of \(v_i\)’s. Hence \(c\) has a non-zero projection to the orthogonal complement of \(\text{span}\{ v_1, \dots v_k\} \). Normalize this projection and denote it by \(v_0\). Then \(\{ v_0, v_1, \dots v_k \} \) is an orthonormal set and we can express \(c\) as follows: <div class="displaymath" id="a0000000055">
   
-</div> c = ∑_i=0^k c, v_i v_i <div class="displaymath" id="a0000000055">
+</div> c = ∑_i=0^k c, v_i v_i <div class="displaymath" id="a0000000056">
   
 </div> </p>
 <p>Since \(c\) is a unit vector, \(\langle c, c \rangle = \sum _{i=0}^k \langle c, v_i \rangle ^2 = 1\). However \(\langle c, v_i \rangle ^2 \not= 0\), thus, </p>
@@ -240,12 +253,12 @@
 <p>Recall that the value \(4\langle c, v_i \rangle ^2\) denotes the number of edges between the vertices \(c\) and \(v_i\), hence it follows from equation ?? that the number of edges originating from c are no more than 3. </p>
 </li>
   <li><p>The only connected admissible diagram containing a triple edge is \(G_2\) that is shown in Fig. ??. This follows from the previous step. From now on we will consider only diagrams with single and double edges. </p>
-<p>Before proceeding any further, we recall the definition for a simple chain. <div class="definition_thmwrapper " id="a0000000056">
+<p>Before proceeding any further, we recall the definition for a simple chain. <div class="definition_thmwrapper " id="a0000000057">
   <div class="definition_thmheading">
     <span class="definition_thmcaption">
     Definition
     </span>
-    <span class="definition_thmlabel">15</span>
+    <span class="definition_thmlabel">16</span>
   </div>
   <div class="definition_thmcontent">
   <p>A <b class="bfseries">simple chain</b> in a graph is a non-repeating sequence of vertices such that every two consecutive vertices are connected with a single edge. </p>
@@ -253,22 +266,22 @@
   </div>
 </div> </p>
 </li>
-  <li><p>Any simple chain \((v_1, ..., v_l)\) in a connected admissable diagram can be replaced by the single vector \(v = \sum _{i=1}^l v_i\). [See Fig ??] </p>
-<p>It suffices to show that \(v\) is a unit vector and the new diagram obained after the replacement is connected and admissable. Note that, <div class="displaymath" id="a0000000057">
+  <li><p>Any simple chain \((v_1, ..., v_l)\) in a connected admissible diagram can be replaced by the single vector \(v = \sum _{i=1}^l v_i\). [See Fig ??] </p>
+<p>It suffices to show that \(v\) is a unit vector and the new diagram obained after the replacement is connected and admissible. Note that, <div class="displaymath" id="a0000000058">
   
-</div> v, v = l + ∑_i &lt; j 2 v_i, v_j <div class="displaymath" id="a0000000058">
+</div> v, v = l + ∑_i &lt; j 2 v_i, v_j <div class="displaymath" id="a0000000059">
   
-</div> Since there are no cycles in the diagram, \(\langle v_i, v_j \rangle = 0\) for all pairs where \(i {\lt} j\) except for when \(j = i+1\) (i.e consecutive vertices). Then for consecutive verices, we have \(\langle v_i, v_{i+1} \rangle = -1\), which is why <div class="displaymath" id="a0000000059">
+</div> Since there are no cycles in the diagram, \(\langle v_i, v_j \rangle = 0\) for all pairs where \(i {\lt} j\) except for when \(j = i+1\) (i.e consecutive vertices). Then for consecutive verices, we have \(\langle v_i, v_{i+1} \rangle = -1\), which is why <div class="displaymath" id="a0000000060">
   
-</div> ∑_i &lt; j 2 v_i, v_j = ∑_i = 1^k-1 2 v_i, v_i+1 = -(k-1) <div class="displaymath" id="a0000000060">
+</div> ∑_i &lt; j 2 v_i, v_j = ∑_i = 1^k-1 2 v_i, v_i+1 = -(k-1) <div class="displaymath" id="a0000000061">
   
 </div> And so \(\langle v, v \rangle = 1\). </p>
-<p>Furthermore, since the diagram is acyclic, an arbitrary vertex \(u\) not in the chain can be connected to at most one vertex (call it \(v_m\)) in the chain. Then, <div class="displaymath" id="a0000000061">
+<p>Furthermore, since the diagram is acyclic, an arbitrary vertex \(u\) not in the chain can be connected to at most one vertex (call it \(v_m\)) in the chain. Then, <div class="displaymath" id="a0000000062">
   
-</div> u, v = ∑_i=1^k u, v_i= u, v_m <div class="displaymath" id="a0000000062">
+</div> u, v = ∑_i=1^k u, v_i= u, v_m <div class="displaymath" id="a0000000063">
   
-</div> Consequently, when the whole chain is replaced by the single cevtor \(v\), any vertex \(u\) that was not in the chain reamains connected to \(v\) in the same way it was to \(v_m\). Hence, we can conclude that this new diagram is also connected and admissable. </p>
-<figure id="a0000000063">
+</div> Consequently, when the whole chain is replaced by the single cevtor \(v\), any vertex \(u\) that was not in the chain reamains connected to \(v\) in the same way it was to \(v_m\). Hence, we can conclude that this new diagram is also connected and admissible. </p>
+<figure id="a0000000064">
   <div class="centered">[scale=0.3]./Dynkin_Collapse.png  <figcaption>
   <span class="caption_title"></span> 
   <span class="caption_ref"></span> 
@@ -292,15 +305,15 @@
   <div class="centered">[scale=0.3]./Dynkin_Valid.png <figcaption>
   <span class="caption_title"></span> 
   <span class="caption_ref"></span> 
-  <span class="caption_text">Possible types of connected admissable diagrams, excluding \(G_2\).</span> 
+  <span class="caption_text">Possible types of connected admissible diagrams, excluding \(G_2\).</span> 
 </figcaption>  </div>
 
 </figure>
 </li>
   <li><p>The admissible diagram of type T1 corresponds to the Dynkin diagram \(A_n\) in Fig. ??, where \(n \geq 1\). </p>
 </li>
-  <li><p>The only admissable diagrams of type T2 are \(B_n \cong C_n\), and \(F_4\). Define \(u = \sum _{i=1}^{p} i \cdot u_i\), where \(p\) is number of vertices before the double edge (See Figure ??). A brief computation reveals, </p>
-<div class="equation" id="<plasTeX.TeXFragment object at 0x10f673e90>">
+  <li><p>The only admissible diagrams of type T2 are \(B_n \cong C_n\), and \(F_4\). Define \(u = \sum _{i=1}^{p} i \cdot u_i\), where \(p\) is number of vertices before the double edge (See Figure ??). A brief computation reveals, </p>
+<div class="equation" id="<plasTeX.TeXFragment object at 0x10619bd10>">
 <p>
   <div class="equation_content">
     \begin{equation}  \label{eq:self_inp} \langle u, u \rangle = \sum _{i=1}^p i^2 \langle u_i, u_i \rangle + \sum _{i {\lt} j} ij \cdot 2 \langle u_i, u_j \rangle = p^2 - \frac{p(p-1)}{2} = \frac{p(p+1)}{2} \end{equation}
@@ -310,18 +323,18 @@
 </div>
 <p>Likewise, define \(v = \sum _{j=1}^q j \cdot v_j\) to get \(\langle v, v \rangle = q(q+1)/2\). Then, \(\langle u, v \rangle = pq \langle u_p , v_q \rangle \), since the double edge is the only edge between the components of \(u\) and \(v\). Then, \(\langle u, v \rangle ^2 = p^2q^2 / 2\) since the number of edges \(4 \langle u_p, v_q \rangle \) is 2. </p>
 <p>Then, since \(u\) is not a multiple of \(v\) Cauchy-Schwarz holds strictly giving us, </p>
-<p><div class="displaymath" id="a0000000064">
+<p><div class="displaymath" id="a0000000065">
   
-</div>  &lt;  · <div class="displaymath" id="a0000000065">
+</div>  &lt;  · <div class="displaymath" id="a0000000066">
   
 </div> </p>
 <p>It is known that \(p\) and \(q\) are positive integers, so the only solutions are \(p=1\) and \(q\) is arbitrary (or vice versa) or \(p = q = 2\). <br /></p>
 <p>The first solution corresponds to either of \(B_n\) or \(C_n\) (depending upon the choice of the short root), while the second solution corresponds to the Dynkin Diagram \(F_4\) in Fig. ??. <br /></p>
 <p>If \(n=1\), both solutions correspond to \(A_1\), however if \(n=2\) then we have the case for \(B_2 = C_2\). Otherwise, we establish the convention that \(B_n\) has \(n \geq 2\) while \(C_n\) has \(n\geq 3\). </p>
 </li>
-  <li><p>Finally, we claim that the only admissable diagrams of type T3 are \(D_n, E_6, E_7\) and \(E_8\). As earlier, define \(u = \sum _{i=1}^p i \cdot u_i\) and \(v = \sum _{j=1}^q j \cdot v_j\). This time, also define \(w = \sum _{k=1}^{r-1} k \cdot w_k\). Observe that there are no direct edges between the components \(u_i, v_j\) or \(w_k\) so they exist in mutually orthogonal subspaces. This holds also for \(u, v\) and \(w\). <br /></p>
+  <li><p>Finally, we claim that the only admissible diagrams of type T3 are \(D_n, E_6, E_7\) and \(E_8\). As earlier, define \(u = \sum _{i=1}^p i \cdot u_i\) and \(v = \sum _{j=1}^q j \cdot v_j\). This time, also define \(w = \sum _{k=1}^{r-1} k \cdot w_k\). Observe that there are no direct edges between the components \(u_i, v_j\) or \(w_k\) so they exist in mutually orthogonal subspaces. This holds also for \(u, v\) and \(w\). <br /></p>
 <p>Using a similar argument to step 3, we can conclude that \(c\) is not a linear combination of \(u, v\) and \(w\), hence: </p>
-<div class="equation" id="<plasTeX.TeXFragment object at 0x10f734bf0>">
+<div class="equation" id="<plasTeX.TeXFragment object at 0x106228b90>">
 <p>
   <div class="equation_content">
     \begin{equation}  \label{eq:cc_inp} 1 = \langle c, c \rangle {\gt} \langle c, \hat u \rangle ^2 + \langle c, \hat v\rangle ^2 + \langle c, \hat w \rangle ^2 \end{equation}
@@ -339,19 +352,19 @@
 </p>
 </div>
 <p>Note that no \(u_i\) is connected to \(c\) except for \(u_{p-1}\), thus \( \langle c, u_i \rangle = 0\) for all \(i \not= p-1\). Moreover, since they are connected by a single edge, \(4 \langle c, u_{p-1} \rangle = 1\). Therefore, the numerator in the relation above (Eq. ??) is, </p>
-<p><div class="displaymath" id="a0000000066">
+<p><div class="displaymath" id="a0000000067">
   
-</div> c, u ^2 = ∑_i-1^p-1 i^2 c, u_i ^2 = (p-1)^2 ·c, u_p-1 =  <div class="displaymath" id="a0000000067">
+</div> c, u ^2 = ∑_i-1^p-1 i^2 c, u_i ^2 = (p-1)^2 ·c, u_p-1 =  <div class="displaymath" id="a0000000068">
   
 </div> </p>
 <p>Whereas, the denominator (in Eq. ??) can be obtained to be \(p(p-1) /2\) using Eq. ??. Then, Eq. ?? transforms into the following after some computation (note that \(p \geq 2\)). </p>
-<p><div class="displaymath" id="a0000000068">
+<p><div class="displaymath" id="a0000000069">
   
-</div> c, u ^2 =  1 -   <div class="displaymath" id="a0000000069">
+</div> c, u ^2 =  1 -   <div class="displaymath" id="a0000000070">
   
 </div> </p>
 <p>Repeating this for \(v\) and \(w\) helps transform Eq. ?? into, </p>
-<div class="equation" id="table:sol">
+<div class="equation" id="eq:ineq">
 <p>
   <div class="equation_content">
     \begin{equation}  \label{eq:ineq} \frac{1}{p} + \frac{1}{q} + \frac{1}{r} {\gt} 1, \quad \quad p,q,r \geq 2 \end{equation}
@@ -359,9 +372,9 @@
   <span class="equation_label"></span>
 </p>
 </div>
-<p>Without loss of generaltiy, assume \(p \geq q \geq r \geq 2\). Observe that \(r {\lt} 3\) since the sum cannot exceed 1. This forces \(r = 2\). If we take \(q=2\) as well, then any feasible \(p\) works. If \(q=3\), however, then \(p {\lt} 6\). No other solutions exist for \(q \geq 4\). The correspondence between type T3 Dynkin Diagrams and the solution here are summarized in Table ??. </p>
-<div class="table"  id="a0000000070">
-   <div class="centered">  <table class="tabular">
+<p>Without loss of generaltiy, assume \(p \geq q \geq r \geq 2\). Observe that \(r {\lt} 3\) since the sum cannot exceed 1. This forces \(r = 2\). If we take \(q=2\) as well, then any feasible \(p\) works. If \(q=3\), however, then \(p {\lt} 6\). No other solutions exist for \(q \geq 4\). The correspondence between type T3 Dynkin Diagrams and the solution here are summarized in Table 2.1. </p>
+<div class="table"  id="a0000000071">
+  <div class="centered"> <table class="tabular">
   <tr>
     <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black; border-left:1px solid black" 
         rowspan=""
@@ -501,7 +514,7 @@
 </li>
 </ol>
 <p>This completes the classification of all indecomposable root systems. </p>
-<p><div class="proof_wrapper" id="a0000000071">
+<p><div class="proof_wrapper" id="a0000000072">
   <div class="proof_heading">
     <span class="proof_caption">
     
@@ -512,6 +525,7 @@
   
   </div>
 </div> </p>
+
 
 </div> <!--main-text -->
 </div> <!-- content-wrapper -->

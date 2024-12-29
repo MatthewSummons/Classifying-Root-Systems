@@ -1,26 +1,26 @@
 \chapter{Classifying Root Systems}
-The classification of root systems can be found in several textbooks, a few common references include
+The classification presented ahead closely follows Humphrey's proof in \cite{humphreys_1972}.
+Other proofs for the classification of root systems can be found in several textbooks, a few common references include
 \cite{fulton_harris_2004}, \cite{humphreys_1972} and  \cite{Tauvel2005}.
-The classification presented ahead follows Humphreys proof in \cite{humphreys_1972}.
 
 \section{Simple Roots}
 
-For a particular root system $\Phi$ one may chose a subset (not neccesarily unique) of
+For a particular root system $\Phi$ one may choose a subset (not necesarily unique) of
 roots called \textbf{simple roots} that are, in essence, building blocks of all the other roots
 in the root system. \newline
 
-For each root, $\alpha \in \Phi$, there exists a uniqe hyperplane passing through the origin that
-is orthogonal to this root. Since the root system is only finite, the finite union of all
-such hyperplanes can never be the whole ambient space, $E$. \newline
+For each root, $\alpha \in \Phi$, there exists a unique hyperplane passing through the origin that
+is orthogonal to this root. Since the root system is finite, the union of all
+such hyperplanes can never be the whole ambient space $E$. \newline
 
 As such, it is always possible to find a vector $d \in E$ such that for any root $\alpha$, $\langle \alpha, d \rangle \not= 0$.
-One partition the root system into two sets, $R^+(d)$ and $R^-(d)$, where $R^+(d) = \{
-    \alpha \in \Phi |  <\langle \alpha, d \rangle > 0\}$ and $R^-(d) = -R^+(d)$. \newline
+One partitions the root system into two sets, $R^+(d)$ and $R^-(d)$, where $R^+(d) = \{
+    \alpha \in \Phi |  \langle \alpha, d \rangle > 0\}$ and $R^-(d) = -R^+(d)$. \newline
 
 \begin{nameddefinition}{Simple Root}
-    Let $d$ be a vector in a finite dimensional inner product space $E$, such that for any $\alpha$ in the root system, $\Phi$,
+    Let $d$ be a vector in a finite dimensional inner product space $E$, such that for any $\alpha$ in the root system $\Phi$,
     $\langle \alpha, d \rangle \not= 0$. 
-    If $\alpha$ belongs to $R^+(d)$ then it is a positive root, otherwise it is defined
+    If $\alpha$ belongs to $R^+(d)$ then it is a positive root; otherwise, it is defined
     to be a negative root.
     A positive root is called \textbf{simple} if it is not the sum of any two other positive roots.
     The set of all such simple roots of a root system $\Phi$ is called a \textbf{basis} for $\Phi$.
@@ -28,14 +28,14 @@ One partition the root system into two sets, $R^+(d)$ and $R^-(d)$, where $R^+(d
 
 Fortunately, the choice of the vector $d$ above is not important.
 Since the following remark is not directly related to the classification of root systems, it is only
-discussed breifly, but one may refer to the literature read more \cite{Humphreys_1990}. \newline
+discussed briefly, but one may refer to the literature read more \cite{Humphreys_1990}. \newline
 
-For every root $\alpha$ in a root system $\Phi$, there exists a hyperplace orthogonal to the root
-and the union of all such hyplerplanes cut the ambient space $E$ into open, connected regions
+For every root $\alpha$ in a root system $\Phi$, there exists a hyperplane orthogonal to the root
+and the union of all such hyperplanes cut the ambient space $E$ into open, connected regions
 called \textbf{Weyl Chambers}. \newline
 
 Interestingly, one may construct a one-to-one correspondence between all bases
-for a root systems and Weyl Chambers \cite{humphreys_1972_Weyl}.
+for a root system and Weyl Chambers \cite{humphreys_1972_Weyl}.
 
 \section{Properties of Simple Roots}
 
@@ -63,9 +63,9 @@ We establish several useful lemmas that we use later.
 \end{lemma}
 
 \begin{proof}
-    Assume to the contrary that $\langle \alpha, \beta \rangle \leq 0$.
+    Assume to the contrary that $\langle \alpha, \beta \rangle > 0$.
     Then from the previous lemma (lemma \ref{lemma:a-b}),
-    we know that $\gamma := \alpha - \beta \in \Phi\}$.
+    we know that $\gamma := \alpha - \beta \in \Phi$.
     If $\gamma$ is a positive root, then $\alpha = \gamma + \beta$ is also positive,
     contradicting our hypothesis. Otherwise, $-\gamma$ must be a positive root, in which case
     $\beta = \alpha + (-\gamma)$ is a positive root, yet again contradicting our hypothesis.
@@ -82,7 +82,7 @@ The following lemma justifies the use of the term basis for the set of all simpl
 And the proceeding lemma links the decomposability of a root system to its basis.
 \begin{lemma}
     \label{lemma:decomp}
-    A root system is decomposable if and only if its base is decomposable
+    A root system is decomposable if and only if its basis is decomposable.
 \end{lemma}
 
 \section{Classification of Root Systems}
@@ -94,42 +94,42 @@ be either $\pi/2$, $2\pi/3$, $3\pi/4$ or $5\pi/6$. This information can be encod
 
 \begin{nameddefinition}{Coxeter Graph}
     The \textbf{Coxeter Graph} of a root system $\Phi$, is a (multi)graph, with each vertex
-    corresponds to simple root of $\Phi$ and every pair of vertices $\hat\alpha, \hat\beta$ are
+    corresponds to a simple root of $\Phi$ and every pair of vertices $\hat\alpha, \hat\beta$ are
     connected by $\langle \langle \alpha, \beta \rangle \rangle \langle \langle \beta, \alpha \rangle \rangle = 
     4cos^2\theta$ edges, where $\theta$ is the angle between the simple roots $\alpha, \beta \in \Phi$
     corresponding to the vertices in the graph.
 \end{nameddefinition}
 
-Coxeter graphs do not however caprture all essential information about the simple roots of a root system.
+Coxeter graphs do not however capture all essential information about the simple roots of a root system.
 In particular, the relative lengths of the roots (like when the angle between the roots is $3\pi/4$ or $5\pi/6$)
-is not represented by the Coxeter Graph. \newline
+are not represented by the Coxeter Graph. \newline
 
 \begin{nameddefinition}{Dynkin Diagram}
     A \textbf{Dynkin Diagram} of a root system is a Coxeter graph of the root system with arrows on
     the double or triple edges to indicate the shorter root
 \end{nameddefinition}
 
-In order to classify indecomposoable root systems it suffices to classify all possible Coxeter Graphs,
+In order to classify indecomposable root systems it suffices to classify all possible Coxeter Graphs,
 since the Dynkin Diagrams can be obtained from the Coxeter graphs by adding the arrows. \newline
 
 \begin{nameddefinition}{Admissable Configuration}
     A linearly independent set of $n$ unit vectors $\{v_1, \dots, v_n \}$ that spans the ambient space
-    $E$ is called an admissable configuration if for all $i\not=j, \langle v_i, v_j \rangle \leq 0$
+    $E$ is called an admissible configuration if for all $i\not=j, \langle v_i, v_j \rangle \leq 0$
     and $4 \langle v_i, v_j \rangle^2 \in \{0, 1, 2, 3\}$.
 \end{nameddefinition}
 
-Observe that the set of normalized simple roots of any root system is an admissable confifugration
+Observe that the set of normalized simple roots of any root system is an admissible configuration
 by lemma \ref{lemma:admit_config}. \newline
 
 \begin{nameddefinition}{Admissable Diagram}
-    A Coxeter graph of an admissable configuration is called an admissable diagram
+    A Coxeter graph of an admissible configuration is called an admissible diagram.
 \end{nameddefinition}
 
 From lemma \ref{lemma:decomp}, we know that the basis of an indecomposable root system cannot be
 decomposed into mutually orthogonal subsets.
 Therefore, the corresponding Coxter graph for an indecomposable root system will also be connected.
 As such, to classify all indecompsable root systems it is sufficient to consider only connected
-admissable diagrams.
+admissible diagrams.
 This leads directly to the main classification theorem. \newline
 
 \begin{namedtheorem}{Classification of Indecompsable Root Systems}
@@ -145,25 +145,25 @@ This leads directly to the main classification theorem. \newline
 \end{figure}
 
 \begin{proof}
-    We begin by classifying connected admissable diagrams and then proceeding to the Dynkin Diagrams. \newline
+    We begin by classifying connected admissible diagrams and then proceeding to the Dynkin Diagrams. \newline
     
     Since the proof is large, it is split into the following steps.
     \begin{enumerate}
-        \item Any subdiagram of an admissable diagram is also admissable. If the set 
+        \item Any subdiagram of an admissible diagram is also admissible. If the set 
         $\{v_1, \dots, v_n \}$ is an admissible configuration, then clearly any subset of it is also an admissible configuration
         (in the space it spans). The same holds for admissible diagrams.
         
-        \item A connected admissable diagram is a tree. Let $v = \sum_{i=1}^{n} v_i$. Evidently, $v \not= 0$, since the admissable
+        \item A connected admissible diagram is a tree. Let $v = \sum_{i=1}^{n} v_i$. Evidently, $v \not= 0$, since the admissible
         configuration is linearly independent. Then,
             \begin{equation*}
-                0 < \langle v, v \rangle = v = \sum_{i=1}^{n} \langle v_i \rangle + \sum_{i < j} 2 \langle v_i, v_j \rangle = n + 2 \sum_{i < j} \langle v_i, v_j \rangle 
+                0 < \langle v, v \rangle = \sum_{i=1}^{n} \langle v_i \rangle + \sum_{i < j} 2 \langle v_i, v_j \rangle = n + 2 \sum_{i < j} \langle v_i, v_j \rangle 
             \end{equation*}
             
         If the vertices $v_i$ and $v_j$ are connected, then $2 \langle v_i, v_j \rangle$ must take on a value in the set
         $\{-1, -\sqrt{2}, -\sqrt{3}\}$. In particular,  $2 \langle v_i, v_j \rangle \leq - 1$, hence the number of terms in the sum above
         cannot exceed $n-1$, so the number of distinct connected vertices must also be at most $n-1$. Since the diagram is connected,
         there must be at least $n-1$ such pairs. This leads to the conclusion that the number of distinct connected pairs of vertices
-        is exaqctly $n-1$ and thus the diagram is a tree.
+        is exactly $n-1$ and thus the diagram is a tree.
         
         \item No more than three edges (counting multiplicities) can originate from the same vertex.
         Let $c$ be any vertex (we refer to its corresponding root as $c$ as well when there is no ambiguity)
@@ -197,10 +197,10 @@ This leads directly to the main classification theorem. \newline
             connected with a single edge.
         \end{definition}
 
-        \item Any simple chain $(v_1, ..., v_l)$ in a connected admissable diagram can be replaced by the single vector 
+        \item Any simple chain $(v_1, ..., v_l)$ in a connected admissible diagram can be replaced by the single vector 
         $v = \sum_{i=1}^l v_i$. [See Fig \ref{img:collapse}]
 
-        It suffices to show that $v$ is a unit vector and the new diagram obained after the replacement is connected and admissable.
+        It suffices to show that $v$ is a unit vector and the new diagram obained after the replacement is connected and admissible.
         Note that,
             \begin{equation*}
                 \langle v, v \rangle = l + \sum_{i < j} 2 \langle v_i, v_j \rangle
@@ -218,7 +218,7 @@ This leads directly to the main classification theorem. \newline
                 \langle u, v \rangle = \sum_{i=1}^{k} \langle u, v_i\rangle = \langle u, v_m \rangle
             \end{equation*}
         Consequently, when the whole chain is replaced by the single cevtor $v$, any vertex $u$ that was not in the chain reamains connected
-        to $v$ in the same way it was to $v_m$. Hence, we can conclude that this new diagram is also connected and admissable.
+        to $v$ in the same way it was to $v_m$. Hence, we can conclude that this new diagram is also connected and admissible.
         
         \begin{figure}
             \centering
@@ -245,13 +245,13 @@ This leads directly to the main classification theorem. \newline
         \begin{figure}[h]
             \centering
             \includegraphics[scale=0.3]{./Dynkin_Valid.png}
-            \caption{Possible types of connected admissable diagrams, excluding $G_2$.}
+            \caption{Possible types of connected admissible diagrams, excluding $G_2$.}
             \label{img:valid}
         \end{figure}
 
         \item The admissible diagram of type T1 corresponds to the Dynkin diagram $A_n$ in Fig. \ref{img:dynkin}, where $n \geq 1$.
 
-        \item The only admissable diagrams of type T2 are $B_n \cong C_n$, and $F_4$. Define $u = \sum_{i=1}^{p} i \cdot u_i$, where $p$ is
+        \item The only admissible diagrams of type T2 are $B_n \cong C_n$, and $F_4$. Define $u = \sum_{i=1}^{p} i \cdot u_i$, where $p$ is
         number of vertices before the double edge (See Figure \ref{img:valid}). A brief computation reveals,
         
         \begin{equation}
@@ -280,7 +280,7 @@ This leads directly to the main classification theorem. \newline
         we establish the convention that $B_n$ has $n \geq 2$ while $C_n$ has $n\geq 3$.
 
         
-        \item Finally, we claim that the only admissable diagrams of type T3 are $D_n, E_6, E_7$ and $E_8$.
+        \item Finally, we claim that the only admissible diagrams of type T3 are $D_n, E_6, E_7$ and $E_8$.
         As earlier, define $u = \sum_{i=1}^p i \cdot u_i$ and $v = \sum_{j=1}^q j \cdot v_j$. This time, also
         define $w = \sum_{k=1}^{r-1} k \cdot w_k$. Observe that there are no direct edges between the components 
         $u_i, v_j$ or $w_k$ so they exist in mutually orthogonal subspaces. This holds also for $u, v$ and $w$. \newline

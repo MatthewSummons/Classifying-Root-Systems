@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.6.30)  29 DEC 2024 13:53
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.6.30)  29 DEC 2024 15:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1001,27 +1001,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--6
 [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 101--102
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 164--166
+Underfull \hbox (badness 10000) in paragraph at lines 166--168
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 183--185
+Underfull \hbox (badness 10000) in paragraph at lines 190--192
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--190
+Underfull \hbox (badness 10000) in paragraph at lines 193--197
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 204--210
+Underfull \hbox (badness 10000) in paragraph at lines 211--218
 
  []
 
@@ -1029,32 +1029,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 204--210
 File: ./images//A1.png Graphic file (type bmp)
 <./images//A1.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 257--260
+Underfull \hbox (badness 10000) in paragraph at lines 267--270
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 261--264
+Underfull \hbox (badness 10000) in paragraph at lines 271--274
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--268
+Underfull \hbox (badness 10000) in paragraph at lines 275--278
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 269--272
+Underfull \hbox (badness 10000) in paragraph at lines 279--282
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 273--278
+Underfull \hbox (badness 10000) in paragraph at lines 283--288
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 279--283
+Underfull \hbox (badness 10000) in paragraph at lines 289--293
 
  []
 
@@ -1163,7 +1163,7 @@ Package logreq Info: Writing requests to 'print.run.xml'.
 Here is how much of TeX's memory you used:
  24549 strings out of 476683
  468444 string characters out of 5804047
- 1866018 words of memory out of 5000000
+ 1868018 words of memory out of 5000000
  44496 multiletter control sequences out of 15000+600000
  517706 words of font info for 87 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191

@@ -1,15 +1,15 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
-[2] Config.pm:310> INFO - Logfile is '/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.blg'
-[95] biber-darwin:340> INFO - === Sun Dec 29, 2024, 13:52:54
-[113] Biber.pm:419> INFO - Reading '/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.bcf'
-[243] Biber.pm:979> INFO - Found 5 citekeys in bib section 0
-[260] Biber.pm:4419> INFO - Processing section 0
-[272] Biber.pm:4610> INFO - Looking for bibtex file 'references.bib' for section 0
-[275] bibtex.pm:1713> INFO - LaTeX decoding ...
-[287] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
-[507] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[507] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[507] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[507] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[518] bbl.pm:660> INFO - Writing '/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.bbl' with encoding 'UTF-8'
-[523] bbl.pm:763> INFO - Output to /Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.bbl
+[5] Config.pm:310> INFO - Logfile is '/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.blg'
+[147] biber-darwin:340> INFO - === Sun Dec 29, 2024, 15:49:02
+[178] Biber.pm:419> INFO - Reading '/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.bcf'
+[363] Biber.pm:979> INFO - Found 5 citekeys in bib section 0
+[414] Biber.pm:4419> INFO - Processing section 0
+[439] Biber.pm:4610> INFO - Looking for bibtex file 'references.bib' for section 0
+[441] bibtex.pm:1713> INFO - LaTeX decoding ...
+[459] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
+[707] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[707] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[707] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[707] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[733] bbl.pm:660> INFO - Writing '/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.bbl' with encoding 'UTF-8'
+[746] bbl.pm:763> INFO - Output to /Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.bbl

@@ -1,1 +1,0 @@
-@book{Humphreys_1990, place={Cambridge}, series={Cambridge Studies in Advanced Mathematics}, title={Reflection Groups and Coxeter Groups}, publisher={Cambridge University Press}, author={Humphreys, James E.}, year={1990}, collection={Cambridge Studies in Advanced Mathematics}} <div></div>
