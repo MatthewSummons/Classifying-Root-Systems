@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.6.30)  29 DEC 2024 03:26
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.6.30)  29 DEC 2024 12:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -739,27 +739,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--6
 [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 92--93
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 148--149
+Underfull \hbox (badness 10000) in paragraph at lines 164--166
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 163--165
+Underfull \hbox (badness 10000) in paragraph at lines 183--185
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 166--170
+Underfull \hbox (badness 10000) in paragraph at lines 186--190
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 184--190
+Underfull \hbox (badness 10000) in paragraph at lines 207--212
 
  []
 
@@ -767,49 +767,140 @@ Underfull \hbox (badness 10000) in paragraph at lines 184--190
 File: ./images//A1.png Graphic file (type bmp)
 <./images//A1.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 230--233
+Underfull \hbox (badness 10000) in paragraph at lines 259--262
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 234--237
+Underfull \hbox (badness 10000) in paragraph at lines 263--266
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 238--241
+Underfull \hbox (badness 10000) in paragraph at lines 267--270
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 271--274
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 242--244
+Underfull \hbox (badness 10000) in paragraph at lines 275--280
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--248
+Underfull \hbox (badness 10000) in paragraph at lines 281--285
+
+ []
+
+) (./Chapters/chapter_2.tex [5]
+Chapter 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--9
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--253
+Underfull \hbox (badness 10000) in paragraph at lines 10--13
 
  []
 
-)) [5]
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--30
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--34
+
+ []
+
+[6
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 91--95
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--107
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--115
+
+ []
+
+
+Overfull \hbox (11.6774pt too wide) in paragraph at lines 116--120
+\TU/lmr/bx/n/10 Definition (Admissable Configuration). \TU/lmr/m/n/10 A linearl
+y independent set of $[]$ unit vectors $[][][][] [] [] [][][]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--124
+
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 129--135
+
+ []
+
+File: ./images//./Dynkin.png Graphic file (type bmp)
+<./images//./Dynkin.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--150
+
+ []
+
+[8] [9]
+File: ./images//./Dynkin_Collapse.png Graphic file (type bmp)
+<./images//./Dynkin_Collapse.png>
+File: ./images//./Dynkin_Valid.png Graphic file (type bmp)
+<./images//./Dynkin_Valid.png>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 274--276
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 277--279
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 284--288
+
+ []
+
+[11])) [12]
 (/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Ro
 ot-Systems/blueprint/print/print.aux)
 Package rerunfilecheck Info: File `print.out' has not changed.
-(rerunfilecheck)             Checksum: 8D3AF171DD4EC5388F29CB9E3FDA5B26;482.
+(rerunfilecheck)             Checksum: A09E32C6BB77DCEFF622B0A2DB046607;1222.
  ) 
 Here is how much of TeX's memory you used:
- 16982 strings out of 476683
- 317833 string characters out of 5804047
+ 17035 strings out of 476683
+ 319040 string characters out of 5804047
  1865018 words of memory out of 5000000
- 36999 multiletter control sequences out of 15000+600000
+ 37044 multiletter control sequences out of 15000+600000
  517682 words of font info for 84 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 101i,10n,115p,426b,479s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,10n,115p,426b,574s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on /Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH39
-99/Classifying-Root-Systems/blueprint/print/print.pdf (6 pages).
+99/Classifying-Root-Systems/blueprint/print/print.pdf (13 pages).

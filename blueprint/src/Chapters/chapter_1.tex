@@ -4,7 +4,9 @@
 \begin{nameddefinition}{Root System}
     Let $E$ be a finite-dimensional Euclidean space with an inner product $\langle \cdot, \cdot \rangle$. \newline
     
-    A \textbf{root system} in $E$ is a tuple (E, $\Phi$), where $\Phi$ is a finite, non-empty set of non-zero vectors (called \textbf{roots}) satisfying the following properties:
+    A \textbf{root system} in $E$ is a tuple (E, $\Phi$), where $\Phi$ is a finite, non-empty set of non-zero vectors (called
+    \textbf{roots}) satisfying the following properties:
+    
     \begin{enumerate}[label=(R{\arabic*})]
         \item $\Phi$ spans $E$.
         \item For every root $\alpha \in \Phi$, the set $\Phi$ is closed under reflection through the hyperplane orthogonal to $\alpha$.
@@ -28,35 +30,39 @@ For convenience and in contexts where the inner product space is clear, the root
 \end{example}
 
 \begin{nameddefinition}{Reduced Root System}
-    If a root system satisfies the condition that the only multiples of a root, $\alpha$, that are in the root system are $\pm \alpha$, then the root system is said to be \textbf{reduced}.
+    If a root system satisfies the condition that the only multiples of a root, $\alpha$, that are in the root system
+    are $\pm \alpha$, then the root system is said to be \textbf{reduced}.
 \end{nameddefinition}
 
 \begin{nameddefinition}{Crystallographic Root System}
     If a root system satisfies the integrality condition below, then it is said to be \textbf{crystallographic}.
     \begin{equation*}
-        \langle \langle \beta, \alpha \rangle \rangle = 2 \frac{ \langle \alpha, \beta \rangle}{\langle \alpha, \alpha \rangle} \in \mathbb{Z} \ \text{for all} \ \alpha, \beta \in \Phi
+        \langle \langle \beta, \alpha \rangle \rangle = 2 \frac{ \langle \alpha, \beta \rangle}{\langle \alpha, \alpha \rangle}
+        \in \mathbb{Z} \ \text{for all} \ \alpha, \beta \in \Phi
     \end{equation*}
 \end{nameddefinition}
 
-Throughout this text, denote $e_i$ as the $i$-th standard basis vector in $\mathbb{R}^n$. Then, in combinations such as $\pm e_i \pm e_j$, the signs may be chosen independently.
+Throughout this text, denote $e_i$ as the $i$-th standard basis vector in $\mathbb{R}^n$.
+Then, in combinations such as $\pm e_i \pm e_j$, the signs may be chosen independently.
 
 \begin{example}
     The set $R_1$, shown below, is a root system in $\mathbb{R}^2$ that is neither reduced nor crystallographic.
-    
     \begin{equation*}
         R_1 = \{
             \pm e_1, (\pm \frac{\sqrt{3}}{2}, \pm \frac{1}{2}), (\pm \sqrt{3}, \pm 1) 
         \} 
     \end{equation*}
-    $R_1$ spans $\mathbb{R}^2$ and is closed under reflection through the hyperplane orthogonal to any root, hence it is a root system.
+    $R_1$ spans $\mathbb{R}^2$ and is closed under reflection through the hyperplane orthogonal to any root,
+    hence it is a root system.
     
-    However, is is not a \textbf{reduced} root system since a scalar multiple of an element in $R_1$, namely $2 \cdot (\pm \frac{1}{2}, \pm \frac{\sqrt{3}}{2})$, is contained in $R_1$ itself. 
-    It is also not a \textbf{crystallographic} root system because $ \langle \langle e_1, (\pm \frac{\sqrt{3}}{2}, \pm \frac{1}{2}) \rangle \rangle = \frac{\sqrt{3}}{2} \notin \mathbb{Z}$.
+    However, is is not a \textbf{reduced} root system since a scalar multiple of an element in $R_1$,
+    namely $2 \cdot (\pm \frac{1}{2}, \pm \frac{\sqrt{3}}{2})$, is contained in $R_1$ itself. 
+    It is also not a \textbf{crystallographic} root system because 
+    $\langle \langle e_1, (\pm \frac{\sqrt{3}}{2}, \pm \frac{1}{2}) \rangle \rangle = \frac{\sqrt{3}}{2} \notin \mathbb{Z}$.
 \end{example}
 
 \begin{example}
     If we remove the redundant multiple in $R_1$ above, we obtain a reduced, non-crystallographic root system $R_2$.
-    
     \begin{equation*}
         R_2 = \{
             \pm e_1, (\pm \frac{\sqrt{3}}{2}, \pm \frac{1}{2})
@@ -74,8 +80,11 @@ One can also construct examples of non-reduced crystallographic root systems. Co
             \pm e_1, \pm e_2, \pm 2 e_1
         \} 
     \end{equation*}
-    $R_3$ spans $\mathbb{R}^2$ and is closed under reflection through the hyperplane orthogonal to any root, hence it is a root system.
-    It is a \textbf{crystallographic} root system because $\langle \langle k e_1, e_2 \rangle \rangle = 0$ and $\langle \langle k e_1, k' e_1 \rangle \rangle = kk' \in \mathbb{Z}$, where $k,k \in \{\pm 1, \pm 2\}$.
+    $R_3$ spans $\mathbb{R}^2$ and is closed under reflection through the hyperplane orthogonal to any root,
+    hence it is a root system.
+    It is a \textbf{crystallographic} root system because
+    $\langle \langle k e_1, e_2 \rangle \rangle = 0$ and $\langle \langle k e_1, k' e_1 \rangle \rangle = kk' \in \mathbb{Z}$,
+    where $k,k \in \{\pm 1, \pm 2\}$.
     However, is is not a \textbf{reduced} root system since $2 e_1 \in R_3$.
 \end{example}
 
@@ -91,8 +100,11 @@ One can also construct examples of non-reduced crystallographic root systems. Co
 
 Therefore, we see that a root system may be reduced, crystallographic, both, or neither. \newline
 
-It should be noted that for crystallographic root systems, the integrality condition implies the second condtion (R2) in root systems since $\sigma_{\alpha}(\alpha) = -\alpha$.
-The integrality condition can be interpretted geometerically as follows--the projection of $\beta$ on $\alpha$ is an integer or half-integer multiple of $\alpha$ since,
+It should be noted that for crystallographic root systems, the integrality condition implies the second condtion (R2)
+in root systems since $\sigma_{\alpha}(\alpha) = -\alpha$.
+The integrality condition can be interpretted geometerically as follows--the projection of $\beta$ on $\alpha$ is
+an integer or half-integer multiple of $\alpha$ since,
+
 \begin{equation*}
     \text{proj}_{\alpha}(\beta) = \frac{1}{2} \langle \langle \beta, \alpha \rangle \rangle \alpha
 \end{equation*}
@@ -106,14 +118,17 @@ In fact, this is the most restrictive condition since,
 \end{equation*}
 where $\theta$ is the angle between $\alpha$ and $\beta$.
 
-Furthermore, since $\langle \langle \beta, \alpha \rangle \rangle$ and $\langle \langle \alpha, \beta \rangle \rangle$ must be integers,
+Furthermore, since $\langle \langle \beta, \alpha \rangle \rangle$ and $\langle \langle \alpha, \beta \rangle \rangle$
+must be integers,
+
 \begin{equation*}
     \langle \langle \beta, \alpha \rangle \rangle \cdot \langle \langle \alpha, \beta \rangle \rangle = 4 \cos^2 \theta \in \mathbb{Z}
 \end{equation*}
 
 We restate this result as the following lemma.
 \begin{lemma}
-    For any two roots $\alpha, \beta \in \Phi$, the product $\langle \langle \beta, \alpha \rangle \rangle \cdot \langle \langle \alpha, \beta \rangle \rangle$ is an integer.
+    For any two roots $\alpha, \beta \in \Phi$, the product
+    $\langle \langle \beta, \alpha \rangle \rangle \cdot \langle \langle \alpha, \beta \rangle \rangle$ is an integer.
     More precisely, $4 \cos^2 \theta \in \{ 0, 1, 2, 3, 4 \}.$
     If $4 \cos^2 \theta = 4$, then $\theta = 0$ or $\pi$ and $\beta = \pm \alpha$ which is exactly condition $(R2)$ for a root system.
 \end{lemma}
@@ -121,6 +136,7 @@ We restate this result as the following lemma.
 The possible values for $4 \cos^2 \theta$ and the corresponding angles between the roots are displayed in the table below.
 
 \begin{table}[h]
+\label{table:enum}
 \begin{center}
 \begin{tabular}{|| c  c  c  c  c ||}
     \hline $4\cos^2\theta$
@@ -145,10 +161,12 @@ the root $\alpha$ is no longer than the root $\beta$ under the induced norm in $
 A computation also reveals that $|\langle \beta, \alpha \rangle| \geq |\langle \alpha, \beta \rangle|$.}
 \end{table}
 
-Since we aim to classify all root systems, upto isomorhism, it is important to understand when two root systems are isomorphic. \newline
+Since we aim to classify all root systems, upto isomorhism, it is important to understand when two root systems are
+isomorphic. \newline
 
 \begin{nameddefinition}{Root System Isomorphism}
-    Two root systems $(E, \Phi)$ and $(F,\Psi)$ are said to be isomorphic if there exists a linear isomorphism $\varphi: E \to F$ such that $\varphi(\Phi) = \Psi$
+    Two root systems $(E, \Phi)$ and $(F,\Psi)$ are said to be isomorphic if there exists a linear isomorphism
+    $\varphi: E \to F$ such that $\varphi(\Phi) = \Psi$
     and preserves the number $\langle \langle x, y \rangle \rangle$ for each pair of roots.
 \end{nameddefinition}
 
@@ -157,7 +175,9 @@ Since we aim to classify all root systems, upto isomorhism, it is important to u
 \end{example}
 
 \begin{example}
-    The root systems $S = \{ \pm e_1, \pm e_2, \pm e_1 \pm e_2 \} $ and $S' = \{ \pm e_1, (\pm \frac{\sqrt{3}}{2}, \pm \frac{1}{2}) \}$ are not isomorphic.
+    The root systems
+    $S = \{ \pm e_1, \pm e_2, \pm e_1 \pm e_2 \} $ and
+    $S' = \{ \pm e_1, (\pm \frac{\sqrt{3}}{2}, \pm \frac{1}{2}) \}$ are not isomorphic.
 \end{example}
 
 Finally, we wish to exclude root systems that can be constructed from direct sums of smaller root systems.
@@ -181,14 +201,16 @@ This motivates the following definition. \newline
     The root system $R_5 = \{ \pm e_1, \pm e_2 \} \cup \{ \pm 2 e_1 \}$ is a decomposable root system.
 \end{example}
 
-This report concerns itself primarily with reduced, crystallographic root systems, simply referred to as root systems henceforth, unless otherwise specified.
+This report concerns itself primarily with reduced, crystallographic root systems, simply referred to as root systems henceforth,
+unless otherwise specified.
+
 \footnote{
     The provided definition differs from the more general definition stated in Lean 4's MathLib.
     In Lean 4, root systems are defined over modules instead of Euclidean spaces among other minor differences.
     As such, when neccessary the proofs in Lean 4 restrict the more general definition to our definition.
     Of note, root systems in Lean 4 are assumed to be reduced, crystallographic root systems.} \newline
 
-\section{Classifying Root Systems of Small Rank}
+    \section{Classifying Root Systems of Small Rank}
 
 % Classification of Rank 1 Root Systems
 \begin{namedtheorem}{Classification of Rank 1 Root Systems}
@@ -215,14 +237,21 @@ This report concerns itself primarily with reduced, crystallographic root system
     There exist only 4 reduced, crystallographic root systems (upto isomorphism). Namely,
     \begin{equation*}
     \begin{aligned}
+        A_1 \times A_1 &:= \{\pm \alpha_1, \pm \alpha_2 \} \\
         A_2 &:= \{\pm \alpha_1, \pm \alpha_2, \pm (\alpha_1 + \alpha_2) \} \\
         B_2 &:= \{\pm \alpha_1, \pm \alpha_2, \pm (\alpha_1 + \alpha_2), \pm (2 \alpha_1 + \alpha_2) \} \\
-        D_2 &:= \{\pm \alpha_1, \pm \alpha_2 \} \\
-        G_2 &:= \{\pm \alpha_1, \pm \alpha_2, \pm (\alpha_1 + \alpha_2), \pm (3\alpha_1 + 2\alpha_2), \pm (2\alpha_1 + \alpha_2), \pm (3\alpha_1 + \alpha_2) \}
+        G_2 &:= \{
+            \pm \alpha_1,
+            \pm \alpha_2,
+            \pm (\alpha_1 + \alpha_2),
+            \pm (3\alpha_1 + 2\alpha_2),
+            \pm (2\alpha_1 + \alpha_2),
+            \pm (3\alpha_1 + \alpha_2)
+        \}
     \end{aligned}
     \end{equation*}
-    where $\alpha_1$ and $\alpha_2$ are roots satisfying the condition that $\|\alpha_1\| \leq \|\alpha\|$ for all $\alpha$ in the root system
-    under the induced norm (i.e. $\alpha_1$ is the shortest root) and the angle between $\alpha_1$ and $\alpha_2$,
+    where $\alpha_1$ and $\alpha_2$ are roots satisfying the condition that $\|\alpha_1\| \leq \|\alpha\|$ for all $\alpha$ in
+    the root system under the induced norm (i.e. $\alpha_1$ is the shortest root) and the angle between $\alpha_1$ and $\alpha_2$,
     $\theta_{\alpha_1, \alpha_2}$ is no smaller than $\pi / 2$.
 \end{namedtheorem}
 
@@ -240,11 +269,14 @@ This report concerns itself primarily with reduced, crystallographic root system
     with the four possible cases of angles between them. \newline
 
     \textbf{Case 1.} $\theta_{\alpha_1, \alpha_2} = \pi / 2$.
-    In this scenario, the set $D_2$ is already a root system and any further additions would make it a non-reduced root-system. \newline
+    In this scenario, the set $A_1 \times A_1$ is already a root system and any further additions would make it a
+    non-reduced root-system. \newline
 
     \textbf{Case 2.} $\theta_{\alpha_1, \alpha_2} = 2\pi / 3$.
-    In this case, we begin with the set $\{\pm \alpha_1, \pm \alpha_2 \}$ and observe that it is not closed under reflection through the hyperplane othogonal to its roots.
-    It is evident that upon the addition of the element $\pm (\alpha_1 + \alpha_2)$ into the above set, we do get a closed root system. \newline
+    In this case, we begin with the set $\{\pm \alpha_1, \pm \alpha_2 \}$ and observe that it is not closed under reflection
+    through the hyperplane othogonal to its roots.
+    It is evident that upon the addition of the element $\pm (\alpha_1 + \alpha_2)$ into the above set, we do get a
+    closed root system. \newline
 
     \textbf{Case 3.} $\theta_{\alpha_1, \alpha_2} = 3\pi / 4$.
     Yet again, begin with the set $\{\pm \alpha_1, \pm \alpha_2 \}$. Computing $\sigma_{\alpha_2}(\alpha_1)$ returns 

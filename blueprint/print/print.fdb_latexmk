@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1735413998 "print.tex" "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.pdf" "print" 1735414000 0
-  "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.aux" 1735414000 1505 25a08d7b1b84611de3119551f919af60 "pdflatex"
-  "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.out" 1735414000 482 8d3af171dd4ec5388f29cb9e3fda5b26 "pdflatex"
+["pdflatex"] 1735447793 "print.tex" "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.pdf" "print" 1735447797 0
+  "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.aux" 1735447796 3922 e2364c3c0af9a471308e47de6fa91b0d "pdflatex"
+  "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.out" 1735447796 1222 a09e32c6bb77dceff622b0a2db046607 "pdflatex"
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -87,8 +87,12 @@
   "/usr/local/texlive/2023/texmf-dist/web2c/texmf.cnf" 1677365944 40745 87bb86a62d462f93a1efc6b0c65c872e ""
   "/usr/local/texlive/2023/texmf-var/web2c/xetex/xelatex.fmt" 1688120836 10502841 29c6de76b96ecdb3d310ce3165de82fa ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "Chapters/chapter_1.tex" 1735413977 13892 269b83d0d41481bc2670e22f595c403d ""
-  "content.tex" 1735413992 396 dfbe0b2e973300409561229de8e3e3a4 ""
+  "Chapters/chapter_1.tex" 1735421045 14093 50723596fa821084cd8e3f4b3fbcc6da ""
+  "Chapters/chapter_2.tex" 1735447792 19000 4b0a8e2a24e9c77a61dbd694355ecb89 ""
+  "content.tex" 1735414889 427 730c9a1f07eec2e8c3a09076d7726db2 ""
+  "images//./Dynkin.png" 1735439755 175239 784712340dff48694b00a5c7314355f6 ""
+  "images//./Dynkin_Collapse.png" 1735443130 89353 e1fda92f26845544bcf0bb866325c343 ""
+  "images//./Dynkin_Valid.png" 1735443623 131446 487210f6c0e09f7805dc3ae1b18311f7 ""
   "images//A1.png" 1735412432 7352 fe61dcdb829ccb4571e97bc56f640066 ""
   "macros/common.tex" 1735365189 1071 c550b686896ba9c194ebf239da1d607c ""
   "macros/print.tex" 1732866476 1101 87627b2ec24fef68edc71c13f43f7bab ""

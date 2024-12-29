@@ -783,6 +783,16 @@ INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT ./images//A1.png
 INPUT ./images//A1.png
+INPUT ./Chapters/chapter_2.tex
+INPUT Chapters/chapter_2.tex
+INPUT ./Chapters/chapter_2.tex
+INPUT Chapters/chapter_2.tex
+INPUT ./images//./Dynkin.png
+INPUT ./images//./Dynkin.png
+INPUT ./images//./Dynkin_Collapse.png
+INPUT ./images//./Dynkin_Collapse.png
+INPUT ./images//./Dynkin_Valid.png
+INPUT ./images//./Dynkin_Valid.png
 INPUT /Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.aux
 INPUT /Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.out
 INPUT /Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.out
