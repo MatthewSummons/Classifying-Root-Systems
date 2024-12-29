@@ -9,7 +9,7 @@ variable {ι R M N : Type*}
 
 -- Define what it means for a root system to be rank 1
 def is_rank_one_root_system (P : RootSystem ι R M N) : Prop :=
-  ∃ (α : M), ∀ i : ι, P.root i = if i = 0 then α else -α
+  ∃ (α : M), α ≠ 0 ∧ ∀ i : ι, P.root i = if i = 0 then α else -α
 
 -- A theorem stating that any rank 1 root system is isomorphic to A1
 theorem rank_one_classification (P : RootSystem ι R M N) (h : is_rank_one_root_system P) :
@@ -18,4 +18,4 @@ theorem rank_one_classification (P : RootSystem ι R M N) (h : is_rank_one_root_
     obtain ⟨α, hα⟩ := h
     use α
     ext i
-    rw [hα]
+    exact hα.2 i

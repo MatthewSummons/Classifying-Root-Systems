@@ -161,7 +161,7 @@ This leads directly to the main classification theorem. \newline
             
         If the vertices $v_i$ and $v_j$ are connected, then $2 \langle v_i, v_j \rangle$ must take on a value in the set
         $\{-1, -\sqrt{2}, -\sqrt{3}\}$. In particular,  $2 \langle v_i, v_j \rangle \leq - 1$, hence the number of terms in the sum above
-        cannot exceed $n-1$, so the number of distinct connected vertices must also be at most $n-1$. Since the diagram is connected,
+        cannot exceed $n-1$, so the number of distinct pairs of connected vertices must also be at most $n-1$. Since the diagram is connected,
         there must be at least $n-1$ such pairs. This leads to the conclusion that the number of distinct connected pairs of vertices
         is exactly $n-1$ and thus the diagram is a tree.
         
@@ -200,13 +200,13 @@ This leads directly to the main classification theorem. \newline
         \item Any simple chain $(v_1, ..., v_l)$ in a connected admissible diagram can be replaced by the single vector 
         $v = \sum_{i=1}^l v_i$. [See Fig \ref{img:collapse}]
 
-        It suffices to show that $v$ is a unit vector and the new diagram obained after the replacement is connected and admissible.
+        It suffices to show that $v$ is a unit vector and the new diagram, obained after the replacement, is connected and admissible.
         Note that,
             \begin{equation*}
                 \langle v, v \rangle = l + \sum_{i < j} 2 \langle v_i, v_j \rangle
             \end{equation*}
         Since there are no cycles in the diagram, $\langle v_i, v_j \rangle = 0$ for all pairs where $i < j$ except for when $j = i+1$
-        (i.e consecutive vertices). Then for consecutive verices, we have $\langle v_i, v_{i+1} \rangle = -1$, which is why 
+        (i.e consecutive vertices). Then for consecutive vertices, we have $\langle v_i, v_{i+1} \rangle = -1$, which is why 
         \begin{equation*}
             \sum_{i < j} 2 \langle v_i, v_j \rangle = \sum_{i  = 1}^{k-1} 2 \langle v_i, v_{i+1} \rangle = -(k-1)
         \end{equation*}
@@ -223,8 +223,8 @@ This leads directly to the main classification theorem. \newline
         \begin{figure}
             \centering
             \includegraphics[scale=0.3]{./Dynkin_Collapse.png}
-            \label{img:collapse}
             \caption{A Visualization of collapsing simple chains in step 5.}
+            \label{img:collapse}
         \end{figure}
     
         \item A connected admissible diagram has none of subdiagrams shown in Fig. \ref{img:collapse}.

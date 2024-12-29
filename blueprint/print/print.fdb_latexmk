@@ -1,16 +1,16 @@
 # Fdb version 4
-["biber /Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print"] 1735458535 "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.bcf" "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.bbl" "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print" 1735458852 0
+["biber /Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print"] 1735458535 "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.bcf" "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.bbl" "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print" 1735459698 0
   "./references.bib" 1735451558 1849 7d8d79fefedc82e04a77221a74d676b3 ""
-  "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.bcf" 1735458851 108194 03080d78e5bdbccb8a5383620ed6ccfb "pdflatex"
+  "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.bcf" 1735459696 108194 03080d78e5bdbccb8a5383620ed6ccfb "pdflatex"
   (generated)
   "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.bbl"
   "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.blg"
   (rewritten before read)
-["pdflatex"] 1735458844 "print.tex" "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.pdf" "print" 1735458852 0
-  "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.aux" 1735458851 4823 2ef31bf5be76f032d40a0eaf6abb3724 "pdflatex"
+["pdflatex"] 1735459691 "print.tex" "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.pdf" "print" 1735459698 0
+  "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.aux" 1735459696 4852 b36c75f481c76dae1c6cb8727f0bc795 "pdflatex"
   "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.bbl" 1735458543 7248 4f178d0728966b20da4c6d0264e5ca8f "biber /Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print"
-  "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.out" 1735458851 1222 a09e32c6bb77dceff622b0a2db046607 "pdflatex"
-  "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.run.xml" 1735458851 2347 44e769b1abf6e0ab732b629986805ece "pdflatex"
+  "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.out" 1735459696 1222 a09e32c6bb77dceff622b0a2db046607 "pdflatex"
+  "/Users/matthewsummons/Desktop/HKU Courses/2024-25/Y4S1/MATH3999/Classifying-Root-Systems/blueprint/print/print.run.xml" 1735459696 2347 44e769b1abf6e0ab732b629986805ece "pdflatex"
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -113,7 +113,7 @@
   "/usr/local/texlive/2023/texmf-var/web2c/xetex/xelatex.fmt" 1688120836 10502841 29c6de76b96ecdb3d310ce3165de82fa ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
   "Chapters/chapter_1.tex" 1735458161 15018 c4ab1cbffe58ba9644871d5246309cc0 ""
-  "Chapters/chapter_2.tex" 1735458789 19117 ff8120cae04e16dd00a05003644da490 ""
+  "Chapters/chapter_2.tex" 1735459668 19120 24a9c30e9d54797b2f9f854a0e86267e ""
   "content.tex" 1735448341 447 8f249f48cd3c74d3d83c06cdacb13791 ""
   "images//./Dynkin.png" 1735439755 175239 784712340dff48694b00a5c7314355f6 ""
   "images//./Dynkin_Collapse.png" 1735443130 89353 e1fda92f26845544bcf0bb866325c343 ""
