@@ -1,0 +1,194 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{fulton_harris_2004}{book}{}
+      \name{author}{2}{}{%
+        {{hash=205bfcbd8ec5b58401ee1d5cbd94a5de}{%
+           family={Fulton},
+           familyi={F\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod}}}%
+        {{hash=38017df6aee91d3bb1c985bade8eb930}{%
+           family={Harris},
+           familyi={H\bibinitperiod},
+           given={Joe},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer New York, NY}%
+      }
+      \strng{namehash}{dc874865e376c50bda90a6157bd8e260}
+      \strng{fullhash}{dc874865e376c50bda90a6157bd8e260}
+      \strng{bibnamehash}{dc874865e376c50bda90a6157bd8e260}
+      \strng{authorbibnamehash}{dc874865e376c50bda90a6157bd8e260}
+      \strng{authornamehash}{dc874865e376c50bda90a6157bd8e260}
+      \strng{authorfullhash}{dc874865e376c50bda90a6157bd8e260}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{isbn}{978-0-387-97527-6}
+      \field{series}{Graduate Texts in Mathematics}
+      \field{subtitle}{A First Course}
+      \field{title}{Representation Theory: A First Course}
+      \field{year}{2004}
+      \field{pages}{325\bibrangedash 338}
+      \range{pages}{14}
+      \verb{doi}
+      \verb https://doi.org/10.1007/978-1-4612-0979-9
+      \endverb
+    \endentry
+    \entry{humphreys_1972}{book}{}
+      \name{author}{1}{}{%
+        {{hash=fffcf3523abd2080d6ffc75ac22de7f8}{%
+           family={Humphreys},
+           familyi={H\bibinitperiod},
+           given={James\bibnamedelima E.},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer New York, NY}%
+      }
+      \strng{namehash}{fffcf3523abd2080d6ffc75ac22de7f8}
+      \strng{fullhash}{fffcf3523abd2080d6ffc75ac22de7f8}
+      \strng{bibnamehash}{fffcf3523abd2080d6ffc75ac22de7f8}
+      \strng{authorbibnamehash}{fffcf3523abd2080d6ffc75ac22de7f8}
+      \strng{authornamehash}{fffcf3523abd2080d6ffc75ac22de7f8}
+      \strng{authorfullhash}{fffcf3523abd2080d6ffc75ac22de7f8}
+      \field{extraname}{1}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{isbn}{978-0-387-90053-7}
+      \field{series}{Graduate Texts in Mathematics}
+      \field{title}{Introduction to Lie Algebras and Representation Theory}
+      \field{year}{1972}
+      \field{pages}{57\bibrangedash 63}
+      \range{pages}{7}
+      \verb{doi}
+      \verb https://doi.org/10.1007/978-1-4612-6398-2
+      \endverb
+    \endentry
+    \entry{humphreys_1972_Weyl}{book}{}
+      \name{author}{1}{}{%
+        {{hash=fffcf3523abd2080d6ffc75ac22de7f8}{%
+           family={Humphreys},
+           familyi={H\bibinitperiod},
+           given={James\bibnamedelima E.},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer New York, NY}%
+      }
+      \strng{namehash}{fffcf3523abd2080d6ffc75ac22de7f8}
+      \strng{fullhash}{fffcf3523abd2080d6ffc75ac22de7f8}
+      \strng{bibnamehash}{fffcf3523abd2080d6ffc75ac22de7f8}
+      \strng{authorbibnamehash}{fffcf3523abd2080d6ffc75ac22de7f8}
+      \strng{authornamehash}{fffcf3523abd2080d6ffc75ac22de7f8}
+      \strng{authorfullhash}{fffcf3523abd2080d6ffc75ac22de7f8}
+      \field{extraname}{2}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{isbn}{978-0-387-90053-7}
+      \field{series}{Graduate Texts in Mathematics}
+      \field{title}{Introduction to Lie Algebras and Representation Theory}
+      \field{year}{1972}
+      \field{pages}{47\bibrangedash 50}
+      \range{pages}{4}
+      \verb{doi}
+      \verb https://doi.org/10.1007/978-1-4612-6398-2
+      \endverb
+    \endentry
+    \entry{Humphreys_1990}{book}{}
+      \name{author}{1}{}{%
+        {{hash=fffcf3523abd2080d6ffc75ac22de7f8}{%
+           family={Humphreys},
+           familyi={H\bibinitperiod},
+           given={James\bibnamedelima E.},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{fffcf3523abd2080d6ffc75ac22de7f8}
+      \strng{fullhash}{fffcf3523abd2080d6ffc75ac22de7f8}
+      \strng{bibnamehash}{fffcf3523abd2080d6ffc75ac22de7f8}
+      \strng{authorbibnamehash}{fffcf3523abd2080d6ffc75ac22de7f8}
+      \strng{authornamehash}{fffcf3523abd2080d6ffc75ac22de7f8}
+      \strng{authorfullhash}{fffcf3523abd2080d6ffc75ac22de7f8}
+      \field{extraname}{3}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{Cambridge Studies in Advanced Mathematics}
+      \field{title}{Reflection Groups and Coxeter Groups}
+      \field{year}{1990}
+      \field{pages}{39\bibrangedash 41}
+      \range{pages}{3}
+    \endentry
+    \entry{Tauvel2005}{book}{}
+      \name{author}{2}{}{%
+        {{hash=c9aa2dfc9d23b4523ecfa9730cd5493e}{%
+           family={Tauvel},
+           familyi={T\bibinitperiod},
+           given={Patrice},
+           giveni={P\bibinitperiod}}}%
+        {{hash=c03b2808384e0cf63f3614500f176e30}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Rupert\bibnamedelimb W.\bibnamedelimi T.},
+           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin, Heidelberg}%
+      }
+      \strng{namehash}{ea90a26a35f82ef2d4a8e247cb25db5a}
+      \strng{fullhash}{ea90a26a35f82ef2d4a8e247cb25db5a}
+      \strng{bibnamehash}{ea90a26a35f82ef2d4a8e247cb25db5a}
+      \strng{authorbibnamehash}{ea90a26a35f82ef2d4a8e247cb25db5a}
+      \strng{authornamehash}{ea90a26a35f82ef2d4a8e247cb25db5a}
+      \strng{authorfullhash}{ea90a26a35f82ef2d4a8e247cb25db5a}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{isbn}{978-3-540-24170-6}
+      \field{series}{Springer Monographs in Mathematics}
+      \field{title}{Lie Algebras and Algebraic Groups}
+      \field{year}{2005}
+      \field{pages}{130\bibrangedash 137}
+      \range{pages}{8}
+      \verb{doi}
+      \verb https://doi.org/10.1007/b139060
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

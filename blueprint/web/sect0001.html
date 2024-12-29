@@ -12,7 +12,8 @@
 <meta name="generator" content="plasTeX" />
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Classifying Root Systems</title>
+<title>Root Systems</title>
+<link rel="next" href="sect0002.html" title="Classifying Root Systems" />
 <link rel="prev" href="index.html" title="Classification of Root Systems" />
 <link rel="up" href="index.html" title="Classification of Root Systems" />
 <link rel="stylesheet" href="styles/theme-white.css" />
@@ -29,14 +30,30 @@
 <nav class="toc">
 <ul class="sub-toc-0">
 <li class=" active current">
-  <a href="sect0001.html"><span class="toc_ref"></span> <span class="toc_entry">Classifying Root Systems</span></a>
+  <a href="sect0001.html"><span class="toc_ref"></span> <span class="toc_entry">Root Systems</span></a>
   <span class="expand-toc">▼</span>
   <ul class="sub-toc-1 active">
      <li class="">
-  <a href="sect0001.html#a0000000003"><span class="toc_ref"></span> <span class="toc_entry">Root Systems</span></a>
+  <a href="sect0001.html#a0000000004"><span class="toc_ref"></span> <span class="toc_entry">Defining Root Systems</span></a>
  </li>
 <li class="">
   <a href="sect0001.html#a0000000036"><span class="toc_ref"></span> <span class="toc_entry">Classifying Root Systems of Small Rank</span></a>
+ </li>
+
+  </ul>
+ </li>
+<li class="">
+  <a href="sect0002.html"><span class="toc_ref"></span> <span class="toc_entry">Classifying Root Systems</span></a>
+  <span class="expand-toc">▶</span>
+  <ul class="sub-toc-1">
+     <li class="">
+  <a href="sect0002.html#a0000000044"><span class="toc_ref"></span> <span class="toc_entry">Simple Roots</span></a>
+ </li>
+<li class="">
+  <a href="sect0002.html#a0000000045"><span class="toc_ref"></span> <span class="toc_entry">Properties of Simple Roots</span></a>
+ </li>
+<li class="">
+  <a href="sect0002.html#img:dynkin"><span class="toc_ref"></span> <span class="toc_entry">Classification of Root Systems</span></a>
  </li>
 
   </ul>
@@ -49,20 +66,20 @@
 
 
 <div class="main-text">
-<h1 id="a0000000002"> Classifying Root Systems</h1>
-<h1 id="a0000000003"> Root Systems</h1>
+<h1 id="a0000000002"> Root Systems</h1>
+<h1 id="a0000000004"> Defining Root Systems</h1>
 <p><p><b class="bfseries">Definition (Root System).</b>  Let \(E\) be a finite-dimensional Euclidean space with an inner product \(\langle \cdot , \cdot \rangle \). <br /></p>
 <p>A <b class="bfseries">root system</b> in \(E\) is a tuple (E, \(\Phi \)), where \(\Phi \) is a finite, non-empty set of non-zero vectors (called <b class="bfseries">roots</b>) satisfying the following properties: </p>
 <ol class="enumerate">
   <li><p>\(\Phi \) spans \(E\). </p>
 </li>
-  <li><p>For every root \(\alpha \in \Phi \), the set \(\Phi \) is closed under reflection through the hyperplane orthogonal to \(\alpha \). That is, for any two roots \(\alpha , \beta \in \Phi \), the set \(\Phi \) contains the element <div class="displaymath" id="a0000000004">
+  <li><p>For every root \(\alpha \in \Phi \), the set \(\Phi \) is closed under reflection through the hyperplane orthogonal to \(\alpha \). That is, for any two roots \(\alpha , \beta \in \Phi \), the set \(\Phi \) contains the element <div class="displaymath" id="a0000000005">
   
-</div> σ_α(β) = β- 2  proj_α(β). <div class="displaymath" id="a0000000005">
+</div> σ_α(β) = β- 2  proj_α(β). <div class="displaymath" id="a0000000006">
   
-</div> where \(\text{proj}_{\alpha }(\beta )\) is the projection of \(\beta \) on \(\alpha \) as shown below. <div class="displaymath" id="a0000000006">
+</div> where \(\text{proj}_{\alpha }(\beta )\) is the projection of \(\beta \) on \(\alpha \) as shown below. <div class="displaymath" id="a0000000007">
   
-</div> proj_α(β) :=  α<div class="displaymath" id="a0000000007">
+</div> proj_α(β) :=  α<div class="displaymath" id="a0000000008">
   
 </div> </p>
 </li>
@@ -71,7 +88,7 @@
 
  </p>
 <p>For convenience and in contexts where the inner product space is clear, the root system is often referred to simply as \(\Phi \). </p>
-<p><div class="example_thmwrapper " id="a0000000008">
+<p><div class="example_thmwrapper " id="a0000000009">
   <div class="example_thmheading">
     <span class="example_thmcaption">
     Example
@@ -86,15 +103,15 @@
 <p><p><b class="bfseries">Definition (Reduced Root System).</b>  If a root system satisfies the condition that the only multiples of a root, \(\alpha \), that are in the root system are \(\pm \alpha \), then the root system is said to be <b class="bfseries">reduced</b>. </p>
 
  </p>
-<p><p><b class="bfseries">Definition (Crystallographic Root System).</b>  If a root system satisfies the integrality condition below, then it is said to be <b class="bfseries">crystallographic</b>. <div class="displaymath" id="a0000000009">
+<p><p><b class="bfseries">Definition (Crystallographic Root System).</b>  If a root system satisfies the integrality condition below, then it is said to be <b class="bfseries">crystallographic</b>. <div class="displaymath" id="a0000000010">
   
-</div> β, α= 2  Z  for all  α, βΦ<div class="displaymath" id="a0000000010">
+</div> β, α= 2  Z  for all  α, βΦ<div class="displaymath" id="a0000000011">
   
 </div> </p>
 
  </p>
 <p>Throughout this text, denote \(e_i\) as the \(i\)-th standard basis vector in \(\mathbb {R}^n\). Then, in combinations such as \(\pm e_i \pm e_j\), the signs may be chosen independently. </p>
-<p><div class="example_thmwrapper " id="a0000000011">
+<p><div class="example_thmwrapper " id="a0000000012">
   <div class="example_thmheading">
     <span class="example_thmcaption">
     Example
@@ -102,17 +119,16 @@
     <span class="example_thmlabel">2</span>
   </div>
   <div class="example_thmcontent">
-  <p>The set \(R_1\), shown below, is a root system in \(\mathbb {R}^2\) that is neither reduced nor crystallographic. </p>
-<p><div class="displaymath" id="a0000000012">
+  <p>The set \(R_1\), shown below, is a root system in \(\mathbb {R}^2\) that is neither reduced nor crystallographic. <div class="displaymath" id="a0000000013">
   
-</div> R_1 = { ±e_1, (±, ±), (±3, ±1) } <div class="displaymath" id="a0000000013">
+</div> R_1 = { ±e_1, (±, ±), (±3, ±1) } <div class="displaymath" id="a0000000014">
   
 </div> \(R_1\) spans \(\mathbb {R}^2\) and is closed under reflection through the hyperplane orthogonal to any root, hence it is a root system. </p>
-<p>However, is is not a <b class="bfseries">reduced</b> root system since a scalar multiple of an element in \(R_1\), namely \(2 \cdot (\pm \frac{1}{2}, \pm \frac{\sqrt{3}}{2})\), is contained in \(R_1\) itself. It is also not a <b class="bfseries">crystallographic</b> root system because \( \langle \langle e_1, (\pm \frac{\sqrt{3}}{2}, \pm \frac{1}{2}) \rangle \rangle = \frac{\sqrt{3}}{2} \notin \mathbb {Z}\). </p>
+<p>However, is is not a <b class="bfseries">reduced</b> root system since a scalar multiple of an element in \(R_1\), namely \(2 \cdot (\pm \frac{1}{2}, \pm \frac{\sqrt{3}}{2})\), is contained in \(R_1\) itself. It is also not a <b class="bfseries">crystallographic</b> root system because \(\langle \langle e_1, (\pm \frac{\sqrt{3}}{2}, \pm \frac{1}{2}) \rangle \rangle = \frac{\sqrt{3}}{2} \notin \mathbb {Z}\). </p>
 
   </div>
 </div> </p>
-<p><div class="example_thmwrapper " id="a0000000014">
+<p><div class="example_thmwrapper " id="a0000000015">
   <div class="example_thmheading">
     <span class="example_thmcaption">
     Example
@@ -120,17 +136,16 @@
     <span class="example_thmlabel">3</span>
   </div>
   <div class="example_thmcontent">
-  <p>If we remove the redundant multiple in \(R_1\) above, we obtain a reduced, non-crystallographic root system \(R_2\). </p>
-<p><div class="displaymath" id="a0000000015">
+  <p>If we remove the redundant multiple in \(R_1\) above, we obtain a reduced, non-crystallographic root system \(R_2\). <div class="displaymath" id="a0000000016">
   
-</div> R_2 = { ±e_1, (±, ±) } <div class="displaymath" id="a0000000016">
+</div> R_2 = { ±e_1, (±, ±) } <div class="displaymath" id="a0000000017">
   
 </div> </p>
 
   </div>
 </div> </p>
 <p>One can also construct examples of non-reduced crystallographic root systems. Consider the following example, </p>
-<p><div class="example_thmwrapper " id="a0000000017">
+<p><div class="example_thmwrapper " id="a0000000018">
   <div class="example_thmheading">
     <span class="example_thmcaption">
     Example
@@ -139,15 +154,15 @@
   </div>
   <div class="example_thmcontent">
   <p>The set \(R_3\) is a root system in \(\mathbb {R}^2\) that is crystallographic but not reduced. </p>
-<p><div class="displaymath" id="a0000000018">
+<p><div class="displaymath" id="a0000000019">
   
-</div> R_3 = { ±e_1, ±e_2, ±2 e_1 } <div class="displaymath" id="a0000000019">
+</div> R_3 = { ±e_1, ±e_2, ±2 e_1 } <div class="displaymath" id="a0000000020">
   
 </div> \(R_3\) spans \(\mathbb {R}^2\) and is closed under reflection through the hyperplane orthogonal to any root, hence it is a root system. It is a <b class="bfseries">crystallographic</b> root system because \(\langle \langle k e_1, e_2 \rangle \rangle = 0\) and \(\langle \langle k e_1, k' e_1 \rangle \rangle = kk' \in \mathbb {Z}\), where \(k,k \in \{ \pm 1, \pm 2\} \). However, is is not a <b class="bfseries">reduced</b> root system since \(2 e_1 \in R_3\). </p>
 
   </div>
 </div> </p>
-<p><div class="example_thmwrapper " id="a0000000020">
+<p><div class="example_thmwrapper " id="a0000000021">
   <div class="example_thmheading">
     <span class="example_thmcaption">
     Example
@@ -155,31 +170,33 @@
     <span class="example_thmlabel">5</span>
   </div>
   <div class="example_thmcontent">
-  <p>The set \(R_4\) is a root system in \(\mathbb {R}^2\) that is reduced and crystallographic. <div class="displaymath" id="a0000000021">
+  <p>The set \(R_4\) is a root system in \(\mathbb {R}^2\) that is reduced and crystallographic. <div class="displaymath" id="a0000000022">
   
-</div> R_4 = { ±e_1, ±e_2 } <div class="displaymath" id="a0000000022">
+</div> R_4 = { ±e_1, ±e_2 } <div class="displaymath" id="a0000000023">
   
 </div> </p>
 
   </div>
 </div> </p>
 <p>Therefore, we see that a root system may be reduced, crystallographic, both, or neither. <br /></p>
-<p>It should be noted that for crystallographic root systems, the integrality condition implies the second condtion (R2) in root systems since \(\sigma _{\alpha }(\alpha ) = -\alpha \). The integrality condition can be interpretted geometerically as follows–the projection of \(\beta \) on \(\alpha \) is an integer or half-integer multiple of \(\alpha \) since, <div class="displaymath" id="a0000000023">
+<p>It should be noted that for crystallographic root systems, the integrality condition implies the second condtion (R2) in root systems since \(\sigma _{\alpha }(\alpha ) = -\alpha \). The integrality condition can be interpretted geometerically as follows–the projection of \(\beta \) on \(\alpha \) is an integer or half-integer multiple of \(\alpha \) since, </p>
+<p><div class="displaymath" id="a0000000024">
   
-</div> proj_α(β) =  β, αα<div class="displaymath" id="a0000000024">
+</div> proj_α(β) =  β, αα<div class="displaymath" id="a0000000025">
   
 </div> </p>
-<p>In fact, this is the most restrictive condition since, <div class="displaymath" id="a0000000025">
+<p>In fact, this is the most restrictive condition since, <div class="displaymath" id="a0000000026">
   
-</div> β, α= 2  = 2  = 2  Z, <div class="displaymath" id="a0000000026">
+</div> β, α= 2  = 2  = 2  Z, <div class="displaymath" id="a0000000027">
   
 </div> where \(\theta \) is the angle between \(\alpha \) and \(\beta \). </p>
-<p>Furthermore, since \(\langle \langle \beta , \alpha \rangle \rangle \) and \(\langle \langle \alpha , \beta \rangle \rangle \) must be integers, <div class="displaymath" id="a0000000027">
+<p>Furthermore, since \(\langle \langle \beta , \alpha \rangle \rangle \) and \(\langle \langle \alpha , \beta \rangle \rangle \) must be integers, </p>
+<p><div class="displaymath" id="a0000000028">
   
-</div> β, α·α, β= 4 ^2 θZ <div class="displaymath" id="a0000000028">
+</div> β, α·α, β= 4 ^2 θZ <div class="displaymath" id="a0000000029">
   
 </div> </p>
-<p>We restate this result as the following lemma. <div class="lemma_thmwrapper " id="a0000000029">
+<p>We restate this result as the following lemma. <div class="lemma_thmwrapper " id="table:enum">
   <div class="lemma_thmheading">
     <span class="lemma_thmcaption">
     Lemma
@@ -193,7 +210,7 @@
 </div> </p>
 <p>The possible values for \(4 \cos ^2 \theta \) and the corresponding angles between the roots are displayed in the table below. </p>
 <div class="table"  id="a0000000030">
-   <div class="centered"> <table class="tabular">
+    <div class="centered"> <table class="tabular">
   <tr>
     <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-left:1px solid black" 
         rowspan=""
@@ -507,17 +524,14 @@
 
   </div>
 </div> </p>
-<p>This report concerns itself primarily with reduced, crystallographic root systems, simply referred to as root systems henceforth, unless otherwise specified. <a class="footnote" href="#a0000000035">
+<p>This report concerns itself primarily with reduced, crystallographic root systems, simply referred to as root systems henceforth, unless otherwise specified. </p>
+<p><a class="footnote" href="#a0000000035">
   <sup class="footnotemark">1</sup>
 </a> <br /></p>
 <h1 id="a0000000036"> Classifying Root Systems of Small Rank</h1>
-<p><p><b class="bfseries">Theorem (Classification of Rank 1 Root Systems).</b>  The only indecomposable, reduced, crystallographic root systems of rank 1 (upto isomorhism) are \(R_0 = \{  \pm \alpha \} \), where \(\alpha \) is any fixed non-zero real number. </p>
+<p><p><b class="bfseries">Theorem (Classification of Rank 1 Root Systems).</b>  The only indecomposable, reduced, crystallographic root systems of rank 1 (upto isomorhism) is \(A_1 = \{  \pm \alpha \} \) [See Figure 1.1], where \(\alpha \) is any fixed non-zero real number. </p>
 
  </p>
-<figure >
-  <p>A1.png[scale=0.25] </p>
-
-</figure>
 <p><div class="proof_wrapper" id="a0000000037">
   <div class="proof_heading">
     <span class="proof_caption">
@@ -539,14 +553,22 @@
   
   </div>
 </div> </p>
-<p><p><b class="bfseries">Theorem (Classification of Rank 2 Root Systems).</b>  There exist only 4 reduced, crystallographic root systems (upto isomorphism). Namely, <div class="displaymath" id="a0000000039">
+<figure id="a0000000039">
+  <div class="centered">[scale=0.4]A1.png <figcaption>
+  <span class="caption_title"></span> 
+  <span class="caption_ref"></span> 
+  <span class="caption_text">Root System \(A_1\)</span> 
+</figcaption> </div>
+
+</figure>
+<p><p><b class="bfseries">Theorem (Classification of Rank 2 Root Systems).</b>  There exist only 4 reduced, crystallographic root systems (upto isomorphism). Namely, <div class="displaymath" id="a0000000040">
   
-</div>  A_2 := {±α_1, ±α_2, ±(α_1 + α_2) } <br />B_2 := {±α_1, ±α_2, ±(2 α_1 + α_2) } <br />D_2 := {±α_1, ±α_2 } <br />G_2 := {±α_1, ±α_2, ±(α_1 + α_2), ±(3α_1 + 2α_2), ±(2α_1 + α_2), ±(3α_1 + α_2) }  <div class="displaymath" id="a0000000040">
+</div>  A_1 ×A_1 := {±α_1, ±α_2 } <br />A_2 := {±α_1, ±α_2, ±(α_1 + α_2) } <br />B_2 := {±α_1, ±α_2, ±(α_1 + α_2), ±(2 α_1 + α_2) } <br />G_2 := { ±α_1, ±α_2, ±(α_1 + α_2), ±(3α_1 + 2α_2), ±(2α_1 + α_2), ±(3α_1 + α_2) }  <div class="displaymath" id="a0000000041">
   
 </div> where \(\alpha _1\) and \(\alpha _2\) are roots satisfying the condition that \(\| \alpha _1\|  \leq \| \alpha \| \) for all \(\alpha \) in the root system under the induced norm (i.e. \(\alpha _1\) is the shortest root) and the angle between \(\alpha _1\) and \(\alpha _2\), \(\theta _{\alpha _1, \alpha _2}\) is no smaller than \(\pi / 2\). </p>
 
  </p>
-<p><div class="proof_wrapper" id="a0000000041">
+<p><div class="proof_wrapper" id="a0000000042">
   <div class="proof_heading">
     <span class="proof_caption">
     
@@ -556,11 +578,13 @@
   <div class="proof_content">
   
   </div>
-</div> Notice that the roots must span the space \(\mathbb {R}^2\). Hence, there must be atleast two linearly independent roots. Pick \(\alpha _1\) to be the shortest root (under the inner product), i.e. \(\| \alpha _1\|  \leq \| \alpha \| \) for all \(\alpha \in \mathbb {R}^2\). </p>
-<p>Choose \(\alpha _2\) such that the angle between the two chosen roots is no smaller than \(\pi / 2\). This is always possible, since if the angle were to be smaller than \(\pi / 2\) then \(-\alpha _2\), which must also be a root by (R2), would have an angle no smaller than \(\pi /2\) with \(\alpha _1\). </p>
-<p>Then Table 1.1 enumerates all possible angles between these roots and given the constraints we deduce that there are only four possible cases. <br /></p>
-<p><b class="bfseries">Case</b> \(\theta _{\alpha _1, \alpha _2} = \pi / 2\). In this scenario, the set \(D_2\) is already a root system and any further additions would make it a non-reduced root-system. </p>
-<p><b class="bfseries">Case</b> \(\theta _{\alpha _1, \alpha _2} = 2\pi / 3\). In this case, we begin with the set \(\{ \pm \alpha _1, \pm \alpha _2 \} \) and observe that it is not closed under reflection through the hyperplane othogonal to its roots. It is evident that upon the addition of the element \(\pm (\alpha _1 + \alpha _2)\) into the above set, we do get a closed root system. <div class="proof_wrapper" id="a0000000042">
+</div> Notice that the roots must span the space \(\mathbb {R}^2\). Hence, there must be atleast two linearly independent roots. Pick \(\alpha _1\) to be the shortest root (under the inner product), i.e. \(\| \alpha _1\|  \leq \| \alpha \| \) for all \(\alpha \in \mathbb {R}^2\). <br /></p>
+<p>Choose \(\alpha _2\) such that the angle between the two chosen roots is no smaller than \(\pi / 2\). This is always possible, since if the angle were to be smaller than \(\pi / 2\) then \(-\alpha _2\), which must also be a root by (R2), would have an angle no smaller than \(\pi /2\) with \(\alpha _1\). <br /></p>
+<p>Then Table 1.1 enumerates all possible angles between these roots and given the constraints we deduce that there are only four possible cases. We begin with the linearly independent vectors \(\alpha _1\) &amp; \(\alpha _2\) and construct from them a root system with the four possible cases of angles between them. <br /></p>
+<p><b class="bfseries">Case 1.</b> \(\theta _{\alpha _1, \alpha _2} = \pi / 2\). In this scenario, the set \(A_1 \times A_1\) is already a root system and any further additions would make it a non-reduced root-system. <br /></p>
+<p><b class="bfseries">Case 2.</b> \(\theta _{\alpha _1, \alpha _2} = 2\pi / 3\). In this case, we begin with the set \(\{ \pm \alpha _1, \pm \alpha _2 \} \) and observe that it is not closed under reflection through the hyperplane othogonal to its roots. It is evident that upon the addition of the element \(\pm (\alpha _1 + \alpha _2)\) into the above set, we do get a closed root system. <br /></p>
+<p><b class="bfseries">Case 3.</b> \(\theta _{\alpha _1, \alpha _2} = 3\pi / 4\). Yet again, begin with the set \(\{ \pm \alpha _1, \pm \alpha _2 \} \). Computing \(\sigma _{\alpha _2}(\alpha _1)\) returns \(\alpha _1 + \alpha _2\), and \(\sigma _{\alpha _2}(\alpha _1)\) gives \(2\alpha _1 + \alpha _2\). Thus adding those into our set and performing a final closure check leads to the root system \(B_2\). <br /></p>
+<p><b class="bfseries">Case 4.</b> \(\theta _{\alpha _1, \alpha _2} = 5\pi / 6\). We repeat the process again, and arrive at \(\sigma _{\alpha _2}(\alpha _1) = 3\alpha _1 + \alpha _2\), \(\sigma _{\alpha _1}(\alpha _1 + \alpha _2) = 2 \alpha _1 + \alpha _2\), \(\sigma _{\alpha _2}(3 \alpha _1 + \alpha _2) = 3 \alpha _1 + 2 \alpha _2\). Thus we obtain our final root system \(G_2\). <div class="proof_wrapper" id="a0000000043">
   <div class="proof_heading">
     <span class="proof_caption">
     
@@ -570,7 +594,7 @@
   <div class="proof_content">
   
   </div>
-</div>  </p>
+</div> </p>
 
 </div> <!--main-text -->
 <footer id="footnotes">
@@ -586,6 +610,8 @@
   <a href="index.html" title="Classification of Root Systems"><svg  class="icon icon-arrow-left "><use xlink:href="symbol-defs.svg#icon-arrow-left"></use></svg>
 </a>
   <a href="index.html" title="Classification of Root Systems"><svg  class="icon icon-arrow-up "><use xlink:href="symbol-defs.svg#icon-arrow-up"></use></svg>
+</a>
+  <a href="sect0002.html" title="Classifying Root Systems"><svg  class="icon icon-arrow-right "><use xlink:href="symbol-defs.svg#icon-arrow-right"></use></svg>
 </a>
 </nav>
 
